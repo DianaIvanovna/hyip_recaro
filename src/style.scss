@@ -2,6 +2,9 @@
 @import url("./vendor/normalize.css");
 @import "./vendor/variables.scss";
 
+@import "./blocks/header/header.scss";
+@import "./blocks/preview/preview.scss";
+@import "./blocks/description/description.scss";
 
 .main{
   @include margins;
@@ -11,53 +14,6 @@
   border: 1px solid red;
   box-sizing: border-box;
 
-}
+  margin-bottom: 2000px;
 
-.header{
-  width: 100%;
-  border-bottom: 1px solid rgba(39, 43, 46, 0.2);
-  box-sizing: border-box;
-}
-
-.header__content {
-  @include margins;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 35px 0 ;
-}
-
-.preview {
-  margin-top: 60px;
-  width: 100%;
-  min-height: 760px;
-  border-radius: 10px;
-  background-color: $back_attention;
-  padding: 80px 0 0 80px;
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box
-}
-
-.preview__title {
-  @include fontValue(normal, 500, 64px, 110%);
-
-  color: $title_color;
-  width: 600px;
-  margin: 0;
-  margin-bottom: 36px;
-}
-
-.preview__subtitle {
-  @include fontValue(normal, 300, 36px, 130%);
-  color: $title_color;
-  width: 400px;
-  margin: 0;
-}
-
-.preview__img {
-  position: absolute;
-  top: -10px;
-  right: 0;
 }

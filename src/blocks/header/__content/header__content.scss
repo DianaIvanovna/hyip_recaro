@@ -1,0 +1,8 @@
+.header__content {
+  @include margins;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0 ;
+}

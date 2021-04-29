@@ -1,0 +1,15 @@
+@import "./__img/preview__img.scss";
+@import "./__subtitle/preview__subtitle.scss";
+@import "./__title/preview__title.scss";
+
+.preview {
+  margin-top: 60px;
+  width: 100%;
+  min-height: 760px;
+  border-radius: 10px;
+  background-color: $back_attention;
+  padding: 80px 0 0 80px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box
+}

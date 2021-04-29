@@ -1,0 +1,9 @@
+.description__text_second {
+  @include fontValue(normal, 300, 24px, 150%);
+  color: $text_color;
+  margin: 0;
+
+  &:first-of-type{
+    margin-bottom: 35px;
+  }
+}

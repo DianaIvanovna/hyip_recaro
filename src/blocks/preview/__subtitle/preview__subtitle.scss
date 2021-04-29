@@ -1,0 +1,6 @@
+.preview__subtitle {
+  @include fontValue(normal, 300, 36px, 130%);
+  color: $title_color;
+  width: 400px;
+  margin: 0;
+}

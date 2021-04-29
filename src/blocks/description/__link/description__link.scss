@@ -1,0 +1,5 @@
+
+.description__link {
+  @include fontValue(normal, 300, 24px, 150%);
+  color: $link_color;
+}

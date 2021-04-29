@@ -1,0 +1,12 @@
+@import "./__block/description__block.scss";
+@import "./__link/description__link.scss";
+@import "./__text/description__text.scss";
+
+.description {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 80px 0;
+}

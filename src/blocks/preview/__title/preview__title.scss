@@ -1,0 +1,8 @@
+.preview__title {
+  @include fontValue(normal, 500, 64px, 110%);
+
+  color: $title_color;
+  width: 600px;
+  margin: 0;
+  margin-bottom: 36px;
+}

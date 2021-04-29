@@ -1,0 +1,7 @@
+@import "./_second/description__text_second.scss";
+
+.description__text {
+  @include fontValue(normal, normal, 36px, 130%);
+  color: $text_color;
+  margin: 0;
+}

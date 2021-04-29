@@ -1,8 +1,14 @@
 @import url("./vendor/font/roboto/roboto.css");
 // title
 $title_color: #FFFFFF;
+// text
+$text_color: #272B2E;
+// link
+$link_color: #5292a5;
 // background
 $back_attention: #272B2E;
+// border
+$border: #272B2E;
 
 @mixin fontValue($style, $weight, $size, $height) {
   font-family: "Roboto";
