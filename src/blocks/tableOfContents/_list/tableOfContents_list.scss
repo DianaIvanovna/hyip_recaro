@@ -1,0 +1,10 @@
+.tableOfContents_list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: start;
+  margin: 0;
+  padding: 0;
+}

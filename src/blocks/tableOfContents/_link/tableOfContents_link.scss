@@ -1,0 +1,25 @@
+.tableOfContents_link {
+  display: flex;
+
+  list-style-type: none;
+  width: 300px;
+  padding-bottom: 30px;
+
+  &::before {
+    content: "\2023";
+    @include fontValue(normal, 300, 36px, 50%);
+
+    display: block;
+    margin-right: 20px;
+    margin-top: 5px;
+    color: $text_color;
+  }
+
+  a {
+    @include fontValue(normal, normal, 24px, 30px);
+    color: $text_color;
+    margin: 0;
+    text-decoration: none;
+  }
+
+}
