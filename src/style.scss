@@ -1,22 +1,15 @@
 @import url("./vendor/normalize.css");
 @import "./vendor/variables.scss";
 
-.main {
-  width: 100%;
-  min-height: 500px;
-  border: 1px solid green;
-  box-sizing: border-box;
-}
 
-.content{
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+.main{
+  @include margins;
+
   display: flex;
   flex-direction: column;
-
   border: 1px solid red;
   box-sizing: border-box;
+
 }
 
 .header{
@@ -28,7 +21,6 @@
 .header__content {
   @include margins;
 
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

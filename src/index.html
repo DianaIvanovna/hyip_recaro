@@ -7,17 +7,28 @@
   <title>Хайп / Recaro</title>
 </head>
 <body>
+  <header class="header">
+    <div class="header__content">
+      <img src="<%= require('./images/logo_hyip.svg')%>" width="100px" height="29px" alt="логотип хайп">
+      <img src="<%= require('./images/logo_recaro.svg')%>" width="160px" height="29px" alt="логотип Recaro">
+    </div>
+  </header>
   <div class="main">
+    <section class="preview">
+      <h1 class="preview__title">Как отправиться в автопутешествие с ребенком? </h1>
+      <p class="preview__subtitle">Памятка, которая сохранит ваши нервные клетки</p>
 
-    <header class="header">
-      <div class="header__content">
-        <img src="<%= require('./images/logo_hyip.svg')%>" width="100px" height="29px" alt="логотип хайп">
-        <img src="<%= require('./images/logo_recaro.svg')%>" width="160px" height="29px" alt="логотип Recaro">
-      </div>
-    </header>
+      <img src="./images/background/back_family.png" alt="">
+      <picture>
+        <source srcset="<%= require('./images/background/back_family.png?{ format: \'webp\'}')%>" type="image/webp">
+        <img src="<%= require('./images/background/back_family.png?{ format: \'png\'}')%>" alt="" type="image/png">
+      </picture>
 
+
+    </section>
 
 
   </div>
+
 </body>
 </html>
