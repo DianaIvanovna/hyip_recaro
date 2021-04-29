@@ -1,3 +1,4 @@
+@import url("./vendor/font/roboto/roboto.css");
 @import url("./vendor/normalize.css");
 @import "./vendor/variables.scss";
 
@@ -25,4 +26,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 35px 0 ;
+}
+
+.preview {
+  width: 100%;
+
+  background-color: $back_attention;
+}
+
+.preview__title {
+  @include fontValue(normal, 500, 64px, 110%);
+
+  color: $title_color;
+}
+
+.preview__subtitle {
+  @include fontValue(normal, 300, 36px, 130%);
+  color: $title_color;
 }

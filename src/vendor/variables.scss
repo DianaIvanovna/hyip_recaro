@@ -1,3 +1,18 @@
+@import url("./vendor/font/roboto/roboto.css");
+// title
+$title_color: #FFFFFF;
+// background
+$back_attention: #272B2E;
+
+@mixin fontValue($style, $weight, $size, $height) {
+  font-family: "Roboto";
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $height;
+}
+
+
 @mixin margins {
   margin: 0 auto;
   width: 1005;
