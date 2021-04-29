@@ -1,1 +1,1 @@
-# Хайп & Recaro
+# Хайп / Recaro

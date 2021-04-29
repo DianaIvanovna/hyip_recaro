@@ -1,0 +1,25 @@
+@mixin margins {
+  margin: 0 auto;
+  max-width: 1440px;
+  box-sizing: border-box;
+
+  @media screen and (min-width: 1439px) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+
+  @media screen and (max-width: 1439px) {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  @media screen and (max-width: 1140px) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
