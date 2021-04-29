@@ -1,0 +1,6 @@
+.article__conclusion_link {
+  @include fontValue(normal, 300, 36px, 150%);
+  color: $text_attention;
+  text-decoration: none;
+  border-bottom: 2px solid $border_attention;
+}

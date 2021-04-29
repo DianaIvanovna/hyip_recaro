@@ -1,3 +1,6 @@
+@import "./_link/article__conclusion_link.scss";
+@import "./_bold/article__conclusion_bold.scss";
+
 .article__conclusion {
   @include fontValue(normal, 300, 36px, 120%);
   color: $text_attention;

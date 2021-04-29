@@ -1,4 +1,5 @@
 @import "./_middle/article__text_middle.scss";
+@import "./_marginSmall/article__text_marginSmall.scss";
 
 .article__text {
   @include fontValue(normal, 300, 24px, 150%);

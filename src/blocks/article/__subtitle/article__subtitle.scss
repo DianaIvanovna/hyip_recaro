@@ -1,0 +1,6 @@
+.article__subtitle {
+  @include fontValue(normal, normal, 36px, 130%);
+  color: $text_color;
+  margin: 0;
+  margin-bottom: 20px;
+}
