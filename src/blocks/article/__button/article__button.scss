@@ -1,0 +1,17 @@
+.article__button {
+  padding: 20px 15px;
+  background: $button_attention;
+  border-radius: 10px;
+  width: 255px;
+  margin: 0 auto;
+  box-shadow: none;
+  border: none;
+
+  a{
+    @include fontValue(normal, normal, 18px, 24px);
+    color: $text_attention;
+    text-align: center;
+    text-decoration: none;
+
+  }
+}

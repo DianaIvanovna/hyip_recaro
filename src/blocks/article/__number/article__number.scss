@@ -1,0 +1,8 @@
+.article__number {
+  @include fontValue(normal, bold, 96px, 120%);
+  color: $text_color;
+  opacity: 0.1;
+  position: absolute;
+  top: -30px;
+  left: -8%;
+}

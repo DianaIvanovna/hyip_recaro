@@ -1,0 +1,8 @@
+@import "./_middle/article__text_middle.scss";
+
+.article__text {
+  @include fontValue(normal, 300, 24px, 150%);
+  color: $text_color;
+  margin: 0;
+  margin-bottom: 60px;
+}

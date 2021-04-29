@@ -1,0 +1,19 @@
+@import "./__attention/article__attention.scss";
+@import "./__button/article__button.scss";
+@import "./__conclusion/article__conclusion.scss";
+@import "./__header/article__header.scss";
+@import "./__img/article__img.scss";
+@import "./__imgLink/article__imgLink.scss";
+@import "./__number/article__number.scss";
+@import "./__text/article__text.scss";
+@import "./__title/article__title.scss";
+
+.article {
+  width: 83%;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

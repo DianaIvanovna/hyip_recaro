@@ -3,12 +3,17 @@
 $title_color: #FFFFFF;
 // text
 $text_color: #272B2E;
+$text_attention: #FFFFFF;
 // link
 $link_color: #5292a5;
 // background
-$back_attention: #272B2E;
+$back_attention: #5292a5;
+$back_dark: #272B2E;
 // border
 $border: #272B2E;
+$border_attention: #FFFFFF;
+// button
+$button_attention: #5093A8;
 
 @mixin fontValue($style, $weight, $size, $height) {
   font-family: "Roboto";

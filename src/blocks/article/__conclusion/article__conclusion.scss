@@ -1,0 +1,9 @@
+.article__conclusion {
+  @include fontValue(normal, 300, 36px, 120%);
+  color: $text_attention;
+  margin: 0;
+  padding-left: 46px;
+  box-sizing: border-box;
+
+  border-left: 4px solid $border_attention;
+}

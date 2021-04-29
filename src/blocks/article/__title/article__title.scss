@@ -1,0 +1,6 @@
+.article__title {
+  @include fontValue(normal, normal, 42px, 120%);
+  color: $text_color;
+  margin: 0;
+  margin-bottom: 20px;
+}
