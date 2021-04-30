@@ -1,0 +1,10 @@
+.article__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: start;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
+}

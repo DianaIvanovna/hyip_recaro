@@ -7,6 +7,7 @@
 @import "./blocks/description/description.scss";
 @import "./blocks/tableOfContents/tableOfContents.scss";
 @import "./blocks/article/article.scss";
+@import "./blocks/carSeats/carSeats.scss";
 
 .main{
   @include margins;
@@ -20,43 +21,3 @@
 
 }
 
-.article__cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: start;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 70px;
-}
-
-.article__text_card {
-  @include fontValue(normal, 300, 20px, 150%);
-  color: $text_color;
-}
-
-.article__card {
-  border: 1px solid #272B2E;
-  box-sizing: border-box;
-  border-radius: 10px;
-  padding: 40px;
-  position: relative;
-  height: 100%;
-}
-
-.article__number_card{
-  @include fontValue(normal, bold, 24px, 28px);
-  color: $text_attention;
-  padding: 11px 18px;
-  width: 50px;
-  box-sizing: border-box;
-
-  background: #272B2E;
-  border-radius: 0px 10px;
-
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 0;
-}

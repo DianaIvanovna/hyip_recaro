@@ -1,0 +1,4 @@
+.article__text_card {
+  @include fontValue(normal, 300, 20px, 150%);
+  color: $text_color;
+}

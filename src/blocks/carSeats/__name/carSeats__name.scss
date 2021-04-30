@@ -1,0 +1,6 @@
+.carSeats__name {
+  @include fontValue(normal, bold, 24px, 120%);
+  color: $text_attention;
+  margin: 0;
+  text-decoration-line: underline;
+}

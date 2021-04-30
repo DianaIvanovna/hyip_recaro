@@ -1,0 +1,10 @@
+.carSeats__card {
+  display: flex;
+  align-items: stretch;
+
+  background-color: $back_color;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  position: relative;
+}

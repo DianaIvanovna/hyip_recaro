@@ -1,0 +1,7 @@
+.carSeats__title {
+  @include fontValue(normal, normal, 36px, 130%);
+  color: $text_attention;
+  margin: 100px auto 40px;
+
+  width: 83%;
+}

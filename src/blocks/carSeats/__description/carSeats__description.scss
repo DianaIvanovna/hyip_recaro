@@ -1,0 +1,7 @@
+
+.carSeats__description {
+  @include fontValue(normal, 300, 16px, 120%);
+  color: $text_attention;
+  margin: 0;
+  margin-top: 5px;
+}

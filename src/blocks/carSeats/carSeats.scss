@@ -1,0 +1,18 @@
+@import "./__card/carSeats__card.scss";
+@import "./__cards/carSeats__cards.scss";
+@import "./__container/carSeats__container.scss";
+@import "./__description/carSeats__description.scss";
+@import "./__group/carSeats__group.scss";
+@import "./__img/carSeats__img.scss";
+@import "./__imgContainer/carSeats__imgContainer.scss";
+@import "./__name/carSeats__name.scss";
+@import "./__signature/carSeats__signature.scss";
+@import "./__subtitle/carSeats__subtitle.scss";
+@import "./__text/carSeats__text.scss";
+@import "./__title/carSeats__title.scss";
+
+.carSeats {
+  width: 100%;
+  background-color: $back_dark;
+  border-radius: 10px;
+}

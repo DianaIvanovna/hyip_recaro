@@ -168,6 +168,145 @@
     </article>
     <!-- ARTICLE END -->
 
+    <!-- CARSEATS START добавь ссылку на кресла-->
+    <section class="carSeats">
+
+      <h2 class="carSeats__title">В стандарте i-Size автокресла делятся на группы:</h2>
+
+      <div class="carSeats__cards">
+
+        <div class="carSeats__card">
+          <div class="carSeats__container">
+            <p class="carSeats__group">Группа 0/0+</p>
+            <p class="carSeats__subtitle">
+              <img src="<%= require('./images/baby_icon.svg')%>" width="23px" height="21px" alt="иконка ребенка">
+              С рождения до 80 см
+            </p>
+            <p class="carSeats__text">
+              Кресла этой группы устанавливаются против хода движения. Такой метод установки повышает уровень безопасности при возможной аварии или резком торможении и снижает вероятность сильной нагрузки на шею и позвоночник ребенка. Группу 0/0+ можно использовать с рождения и приблизительно
+              до 15 месяцев.
+            </p>
+          </div>
+          <div class="carSeats__imgContainer">
+            <picture class="carSeats__img">
+              <source srcset="<%= require('./images/carSeats/carSeats_1.jpg?{ format: \'webp\'}')%>" type="image/webp">
+              <img src="<%= require('./images/carSeats/carSeats_1.jpg?{ format: \'jpg\'}')%>" alt="автокресло Avan" type="image/png">
+            </picture>
+
+            <div class="carSeats__signature">
+              <p class="carSeats__name">Avan</p>
+              <p class="carSeats__description">для детей с рождения и приблизительно до 15 месяцев</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carSeats__card">
+          <div class="carSeats__container">
+            <p class="carSeats__group">Группа 0+/1</p>
+            <p class="carSeats__subtitle">
+              <img src="<%= require('./images/baby_icon.svg')%>" width="23px" height="21px" alt="иконка ребенка">
+              С рождения до 105 см
+            </p>
+            <p class="carSeats__text">
+              Как и в группе 0/0+ автокресло устанавливается против хода движения,
+              но затем, по мере взросления ребенка, разворачивается. Такие автокресла могут использоваться с рождения до достижения роста 105 см (примерно до четырех лет).
+            </p>
+          </div>
+          <div class="carSeats__imgContainer">
+            <picture class="carSeats__img">
+              <source srcset="<%= require('./images/carSeats/carSeats_2.jpg?{ format: \'webp\'}')%>" type="image/webp">
+              <img src="<%= require('./images/carSeats/carSeats_2.jpg?{ format: \'jpg\'}')%>" alt="автокресло Salia Elite" type="image/png">
+            </picture>
+
+            <div class="carSeats__signature">
+              <p class="carSeats__name">Salia Elite</p>
+              <p class="carSeats__description">для детей с рождения до 15 месяцев</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carSeats__card">
+          <div class="carSeats__container">
+            <p class="carSeats__group">Группа 1</p>
+            <p class="carSeats__subtitle">
+              <img src="<%= require('./images/baby_icon.svg')%>" width="23px" height="21px" alt="иконка ребенка">
+              От 70 до 105 см
+            </p>
+            <p class="carSeats__text">
+              Автокресла устанавливаются против хода движения и разворачиваются после того, как ребенку исполнится 15 месяцев. Можно использовать примерно до четырех лет.
+            </p>
+          </div>
+          <div class="carSeats__imgContainer">
+            <picture class="carSeats__img">
+              <source srcset="<%= require('./images/carSeats/carSeats_3.jpg?{ format: \'webp\'}')%>" type="image/webp">
+              <img src="<%= require('./images/carSeats/carSeats_3.jpg?{ format: \'jpg\'}')%>" alt="автокресло Kio" type="image/png">
+            </picture>
+
+            <div class="carSeats__signature">
+              <p class="carSeats__name">Kio</p>
+              <p class="carSeats__description">для детей с девяти месяцев до четырех лет </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carSeats__card">
+          <div class="carSeats__container">
+            <p class="carSeats__group">Группа 2/3</p>
+            <p class="carSeats__subtitle">
+              <img src="<%= require('./images/baby_icon.svg')%>" width="23px" height="21px" alt="иконка ребенка">
+              От 105 до 150 см
+            </p>
+            <p class="carSeats__text">
+              Данная группа автокресел предназначена для детей от 3,5 до 12 лет, устанавливается по ходу движения.
+            </p>
+          </div>
+          <div class="carSeats__imgContainer">
+            <picture class="carSeats__img">
+              <source srcset="<%= require('./images/carSeats/carSeats_4.jpg?{ format: \'webp\'}')%>" type="image/webp">
+              <img src="<%= require('./images/carSeats/carSeats_4.jpg?{ format: \'jpg\'}')%>" alt="автокресло Mako Elite" type="image/png">
+            </picture>
+
+            <div class="carSeats__signature">
+              <p class="carSeats__name">Mako Elite</p>
+              <p class="carSeats__description">для детей с трех до двенадцати лет</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carSeats__card">
+          <div class="carSeats__container">
+            <p class="carSeats__group">Группа 1/2/3</p>
+            <p class="carSeats__subtitle">
+              <img src="<%= require('./images/baby_icon.svg')%>" width="23px" height="21px" alt="иконка ребенка">
+              От 70 до 150 см
+            </p>
+            <p class="carSeats__text">
+              Универсальная группа автокресел, которая подходит для детей от 9 месяцев до 12 лет. Устанавливается по ходу движения. По мере взросления ребенка подголовник регулируется, поэтому кресло «растет» вместе с ребенком.
+            </p>
+          </div>
+          <div class="carSeats__imgContainer">
+            <picture class="carSeats__img">
+              <source srcset="<%= require('./images/carSeats/carSeats_5.jpg?{ format: \'webp\'}')%>" type="image/webp">
+              <img src="<%= require('./images/carSeats/carSeats_5.jpg?{ format: \'jpg\'}')%>" alt="автокресло Monza Nova IS" type="image/png">
+            </picture>
+
+            <div class="carSeats__signature">
+              <p class="carSeats__name">Monza Nova IS</p>
+              <p class="carSeats__description">для детей с девяти месяцев до двенадцати лет</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="article__button article__button_carSeats">
+          <a href="https://www.recarokidsrussia.ru/child-seats.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech">Подобрать автокресло</a>
+        </button>
+
+      </div>
+
+
+    </section>
+    <!-- CARSEATS END -->
+
 
   </div>
 

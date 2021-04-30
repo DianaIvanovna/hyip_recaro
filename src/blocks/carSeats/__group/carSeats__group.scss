@@ -1,0 +1,5 @@
+.carSeats__group{
+  @include fontValue(normal, normal, 24px, 120%);
+  color: $text_color;
+  margin: 0;
+}
