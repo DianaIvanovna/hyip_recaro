@@ -1,0 +1,6 @@
+.article__title_attention {
+  @include fontValue(normal, normal, 36px, 130%);
+  color: $text_attention;
+  margin: 0;
+  margin-bottom: 60px;
+}

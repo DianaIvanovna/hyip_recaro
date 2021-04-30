@@ -1,3 +1,6 @@
+@import "./_mini/article__title_mini.scss";
+@import "./_attention/article__title_attention.scss";
+
 .article__title {
   @include fontValue(normal, normal, 42px, 120%);
   color: $text_color;
