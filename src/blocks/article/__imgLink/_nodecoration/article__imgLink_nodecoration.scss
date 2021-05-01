@@ -1,0 +1,8 @@
+.article__imgLink.article__imgLink_nodecoration {
+  text-decoration: none;
+  @include fontValue(normal, 400, 24px, 120%);
+  span {
+    @include fontValue(normal, bold, 24px, 120%);
+    text-decoration: underline;
+  }
+}

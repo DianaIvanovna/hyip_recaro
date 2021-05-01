@@ -1,10 +1,12 @@
+@import "./_nodecoration/article__imgLink_nodecoration.scss";
+
 .article__imgLink {
   position: absolute;
   bottom: 0;
   left: 0;
 
   @include fontValue(normal, bold, 24px, 120%);
-  text-decoration-line: underline;
+  text-decoration: underline;
   color: $text_attention;
 
   padding: 25px;
