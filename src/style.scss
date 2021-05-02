@@ -8,6 +8,8 @@
 @import "./blocks/tableOfContents/tableOfContents.scss";
 @import "./blocks/article/article.scss";
 @import "./blocks/carSeats/carSeats.scss";
+@import "./blocks/trips/trips.scss";
+@import "./blocks/footer/footer.scss";
 
 .main{
   @include margins;

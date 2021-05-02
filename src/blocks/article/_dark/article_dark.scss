@@ -1,0 +1,17 @@
+.article.article_dark{
+
+  width: 100%;
+
+  .article__number {
+    color: $text_attention;
+    position: static;
+    margin-right: 40px;
+  }
+  .article__title {
+    color: $text_attention;
+    margin: 0;
+  }
+  .article__text {
+    color: $text_attention;
+  }
+}

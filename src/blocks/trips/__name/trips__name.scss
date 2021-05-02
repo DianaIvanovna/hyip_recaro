@@ -1,0 +1,10 @@
+.trips__name {
+  @include fontValue(normal, normal, 42px, 120%);
+  color: $text_attention;
+  margin: 0;
+  margin-bottom: 20px;
+
+  img{
+    margin-right: 15px;
+  }
+}

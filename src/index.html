@@ -514,7 +514,132 @@
 
     </article>
     <!-- ARTICLE END -->
-  </div>
 
+    <!-- КУДА ПОЕХАТЬ START -->
+    <section class="trips">
+      <div class="trips__container">
+        <article class="article article_dark ">
+          <div class="article__titleContainer">
+            <span class="article__number ">7</span>
+            <h2 class="article__title">Куда поехать?</h2>
+          </div>
+          <p class="article__text">Итак, правила долгих поездок с ребенком усвоены. Куда же отправиться в путешествие?<br><br>
+            Выбор места для отдыха зависит от образа жизни родителей и возраста ребенка. Родителям с малышами часто хочется расслабиться на пляже, а вот с детьми постарше уже можно присматриваться к активному отдыху. Мы подобрали несколько интересных и популярных туристических мест в России, которые отлично подойдут для поездки на автомобиле.</p>
+
+            <div class="trips__trip">
+              <img class="trips__back trips__back_1" src="<%= require('./images/wave.svg')%>" alt="волна" type="image/svg">
+
+              <picture class="trips__img">
+                <source srcset="<%= require('./images/trip/trip_1.png?{ format: \'webp\'}')%>" type="image/webp">
+                <img src="<%= require('./images/trip/trip_1.png?{ format: \'png\'}')%>" alt="Крым" type="image/png">
+              </picture>
+
+              <div class="">
+                <h3 class="trips__name">
+                  <img src="<%= require('./images/place.svg')%>" width="22px" height="30px" alt="иконка геолокация" type="image/svg">
+                  Крым
+                </h3>
+                <p class="trips__text">
+                  Популярный маршрут с хорошими дорогами, который отлично подойдет для первого автопутешествия
+                  с ребенком. Крым – идеальное место для поездки
+                  на личном автомобиле. Вы сможете отправиться
+                  на разные пляжи, посетить достопримечательности
+                  в нескольких городах и увидите невероятные пейзажи
+                  по пути. В Крыму найдутся интересные занятия как
+                  для любителей спокойного отдыха, так и для фанатов активности.
+                </p>
+                <p class="trips__subtitle">Чем заняться:</p>
+                <p class="trips__text">посетить Бирюзовое озеро в Алуште, пройтись по тропе Голицына в Новом Свете, посмотреть на замок Ласточкино гнездо в Ялте и Генуэзскую крепость
+                  в Судаке, подняться на гору Ай-Петри и остановиться
+                  в кемпинге на мысе Фиолент.</p>
+              </div>
+            </div>
+
+            <div class="trips__trip ">
+              <img class="trips__back trips__back_2" src="<%= require('./images/wave_2.svg')%>" alt="волна" type="image/svg">
+
+              <div class="">
+                <h3 class="trips__name">
+                  <img src="<%= require('./images/place.svg')%>" width="22px" height="30px" alt="иконка геолокация" type="image/svg">
+                  Кавказские горы
+                </h3>
+                <p class="trips__text">
+                  Идеальный вариант как для зимнего, так и для летнего путешествия. Зимой вы сможете отправиться
+                  в Приэльбрусье и Домбай, чтобы покататься на лыжах или сноуборде, а летом – чтобы насладиться удивительной красотой дикой природы. По пути
+                  из Эльбруса в Домбай можно заехать в Ессентуки
+                  и Кисловодск и посмотреть на местные достопримечательности.
+                </p>
+                <p class="trips__subtitle">Чем заняться:</p>
+                <p class="trips__text">подняться на Эльбрус на канатной дороге, отдохнуть
+                  на термальных источниках Кисловодска и посмотреть
+                  на водопады в Домбае.</p>
+              </div>
+
+              <picture class="trips__img">
+                <source srcset="<%= require('./images/trip/trip_2.png?{ format: \'webp\'}')%>" type="image/webp">
+                <img src="<%= require('./images/trip/trip_2.png?{ format: \'png\'}')%>" alt="Кавказские горы" type="image/png">
+              </picture>
+
+            </div>
+
+            <div class="trips__trip">
+              <img class="trips__back trips__back_3" src="<%= require('./images/wave_3.svg')%>" alt="волна" type="image/svg">
+
+              <picture class="trips__img">
+                <source srcset="<%= require('./images/trip/trip_3.png?{ format: \'webp\'}')%>" type="image/webp">
+                <img src="<%= require('./images/trip/trip_3.png?{ format: \'png\'}')%>" alt="Байкал" type="image/png">
+              </picture>
+
+              <div class="">
+                <h3 class="trips__name">
+                  <img src="<%= require('./images/place.svg')%>" width="22px" height="30px" alt="иконка геолокация" type="image/svg">
+                  Байкал
+                </h3>
+                <p class="trips__text">
+                  Вблизи Байкала достаточно мало заправок и не самые лучшие дороги, поэтому это путешествие среднего уровня сложности. Чтобы насладиться теплой погодой, на Байкал стоит отправляться в июле или в августе, а зимой вы сможете покататься на коньках по кристально чистому льду.
+                </p>
+                <p class="trips__subtitle">Чем заняться:</p>
+                <p class="trips__text">посмотреть на самое глубокое озеро планеты, отправиться на остров Ольхон на пароме и посетить Иволгинский дацан вблизи Улан-Удэ.</p>
+              </div>
+            </div>
+
+            <div class="trips__trip">
+              <img class="trips__back trips__back_4" src="<%= require('./images/wave_4.svg')%>" alt="волна" type="image/svg">
+
+              <div class="">
+                <h3 class="trips__name">
+                  <img src="<%= require('./images/place.svg')%>" width="22px" height="30px" alt="иконка геолокация" type="image/svg">
+                  Карелия
+                </h3>
+                <p class="trips__text">
+                  В Карелии вас ждут дикие леса, огромное количество прозрачных рек и озер, старинная архитектура
+                  и заповедники. Отличный вариант для знакомства
+                  с северной природой, летнего похода с палатками
+                  и рыбалки.
+                </p>
+                <p class="trips__subtitle">Чем заняться:</p>
+                <p class="trips__text">прокатиться на лодке по Ладожскому озеру, познакомиться с историей Карелии в старинном городе Сортавала, посмотреть на архитектуру острова Кижи
+                  и прогуляться по набережной Петрозаводска.</p>
+              </div>
+
+              <picture class="trips__img">
+                <source srcset="<%= require('./images/trip/trip_4.png?{ format: \'webp\'}')%>" type="image/webp">
+                <img src="<%= require('./images/trip/trip_4.png?{ format: \'png\'}')%>" alt="Карелия" type="image/png">
+              </picture>
+
+            </div>
+
+        </article>
+
+
+      </div>
+    </section>
+    <!-- КУДА ПОЕХАТЬ END -->
+
+    <footer class="footer">
+      <p  class="footer__signature">Сделано в креативном бюро «Хайп»
+        ©2021</p>
+    </footer>
+  </div>
 </body>
 </html>

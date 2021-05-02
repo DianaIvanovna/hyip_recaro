@@ -1,0 +1,5 @@
+.trips__text {
+  @include fontValue(normal, 300, 18px, 150%);
+  color: $text_attention;
+  margin: 0;
+}

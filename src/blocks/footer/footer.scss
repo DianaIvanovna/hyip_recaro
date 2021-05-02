@@ -1,0 +1,7 @@
+.footer__signature{
+  @include fontValue(normal, 300, 20px, 150%);
+  text-align: center;
+  color: $text_color;
+  width: 335px;
+  margin: 0 auto;
+}

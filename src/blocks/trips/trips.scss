@@ -1,0 +1,15 @@
+@import "./__back/trips__back.scss";
+@import "./__container/trips__container.scss";
+@import "./__img/trips__img.scss";
+@import "./__name/trips__name.scss";
+@import "./__subtitle/trips__subtitle.scss";
+@import "./__text/trips__text.scss";
+@import "./__trip/trips__trip.scss";
+
+.trips {
+  width: 100%;
+  background-color: $back_dark;
+  border-radius: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}

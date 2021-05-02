@@ -1,0 +1,14 @@
+.trips__container {
+  width: 83%;
+  margin: 0 auto;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+  .trips__trip:last-of-type {
+    border: none;
+  }
+
+}
