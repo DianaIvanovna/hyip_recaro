@@ -1,3 +1,7 @@
 .article__subtitle.article__subtitle_second{
   margin-top: 105px;
+
+  @media screen and (max-width:600px){
+    margin-top: 80px;
+  }
 }

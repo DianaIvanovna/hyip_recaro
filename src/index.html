@@ -9,13 +9,14 @@
 
 <!-- адпативные картинки
 ширина на всех картинках
-ссылки проставить -->
+ссылки проставить
+ссылка на pdf-->
 
 <body>
   <header class="header">
     <div class="header__content">
       <img class="header__logo_1" src="<%= require('./images/logo_hyip.svg')%>" width="100px" height="29px" alt="логотип хайп">
-      <img class="header__logo_2" src="<%= require('./images/logo_recaro.svg')%>" width="160px" height="29px" alt="логотип Recaro">
+      <img class="header__logo_2" src="<%= require('./images/logo_recaro.svg')%>" width="160px" height="29px" alt="логотип Recaro" onclick="document.location.href='https://www.recarokidsrussia.ru/?utm_source=hype&utm_medium=article&utm_campaign=hypetech'">
     </div>
   </header>
 
@@ -200,7 +201,7 @@
     <!-- ARTICLE END -->
 
     <!-- CARSEATS START добавь ссылку на кресла-->
-    <!-- <section class="carSeats">
+    <section class="carSeats">
 
       <h2 class="carSeats__title">В стандарте i-Size автокресла делятся на группы:</h2>
 
@@ -218,10 +219,11 @@
               до 15 месяцев.
             </p>
           </div>
-          <div class="carSeats__imgContainer">
+          <div class="carSeats__imgContainer"
+          onclick="document.location.href = 'https://www.recarokidsrussia.ru/avan.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
             <picture class="carSeats__img">
-              <source srcset="<%= require('./images/carSeats/carSeats_1.jpg?{ format: \'webp\'}')%>" type="image/webp">
-              <img src="<%= require('./images/carSeats/carSeats_1.jpg?{ format: \'jpg\'}')%>" alt="автокресло Avan" type="image/png">
+              <source srcset="<%= require('./images/carSeats/carSeats_1.jpg?{ sizes:[400], format: \'webp\'}')%>" type="image/webp">
+              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_1.jpg?{ sizes:[400], format: \'jpg\'}')%>" alt="автокресло Avan" type="image/png">
             </picture>
 
             <div class="carSeats__signature">
@@ -243,10 +245,11 @@
               но затем, по мере взросления ребенка, разворачивается. Такие автокресла могут использоваться с рождения до достижения роста 105 см (примерно до четырех лет).
             </p>
           </div>
-          <div class="carSeats__imgContainer">
+          <div class="carSeats__imgContainer"
+          onclick="document.location.href = 'https://www.recarokidsrussia.ru/salia-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
             <picture class="carSeats__img">
-              <source srcset="<%= require('./images/carSeats/carSeats_2.jpg?{ format: \'webp\'}')%>" type="image/webp">
-              <img src="<%= require('./images/carSeats/carSeats_2.jpg?{ format: \'jpg\'}')%>" alt="автокресло Salia Elite" type="image/png">
+              <source srcset="<%= require('./images/carSeats/carSeats_2.jpg?{sizes:[400], format: \'webp\'}')%>" type="image/webp">
+              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_2.jpg?{sizes:[400], format: \'jpg\'}')%>" alt="автокресло Salia Elite" type="image/png">
             </picture>
 
             <div class="carSeats__signature">
@@ -267,10 +270,11 @@
               Автокресла устанавливаются против хода движения и разворачиваются после того, как ребенку исполнится 15 месяцев. Можно использовать примерно до четырех лет.
             </p>
           </div>
-          <div class="carSeats__imgContainer">
+          <div class="carSeats__imgContainer"
+          onclick="document.location.href = 'https://www.recarokidsrussia.ru/kio.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
             <picture class="carSeats__img">
-              <source srcset="<%= require('./images/carSeats/carSeats_3.jpg?{ format: \'webp\'}')%>" type="image/webp">
-              <img src="<%= require('./images/carSeats/carSeats_3.jpg?{ format: \'jpg\'}')%>" alt="автокресло Kio" type="image/png">
+              <source srcset="<%= require('./images/carSeats/carSeats_3.jpg?{ sizes:[400],format: \'webp\'}')%>" type="image/webp">
+              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_3.jpg?{ sizes:[400],format: \'jpg\'}')%>" alt="автокресло Kio" type="image/png">
             </picture>
 
             <div class="carSeats__signature">
@@ -291,10 +295,11 @@
               Данная группа автокресел предназначена для детей от 3,5 до 12 лет, устанавливается по ходу движения.
             </p>
           </div>
-          <div class="carSeats__imgContainer">
+          <div class="carSeats__imgContainer"
+          onclick="document.location.href = 'https://www.recarokidsrussia.ru/mako-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
             <picture class="carSeats__img">
-              <source srcset="<%= require('./images/carSeats/carSeats_4.jpg?{ format: \'webp\'}')%>" type="image/webp">
-              <img src="<%= require('./images/carSeats/carSeats_4.jpg?{ format: \'jpg\'}')%>" alt="автокресло Mako Elite" type="image/png">
+              <source srcset="<%= require('./images/carSeats/carSeats_4.jpg?{ sizes:[400], format: \'webp\'}')%>" type="image/webp">
+              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_4.jpg?{ sizes:[400], format: \'jpg\'}')%>" alt="автокресло Mako Elite" type="image/png">
             </picture>
 
             <div class="carSeats__signature">
@@ -315,10 +320,11 @@
               Универсальная группа автокресел, которая подходит для детей от 9 месяцев до 12 лет. Устанавливается по ходу движения. По мере взросления ребенка подголовник регулируется, поэтому кресло «растет» вместе с ребенком.
             </p>
           </div>
-          <div class="carSeats__imgContainer">
+          <div class="carSeats__imgContainer"
+          onclick="document.location.href = 'https://www.recarokidsrussia.ru/monza-nova-is.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
             <picture class="carSeats__img">
-              <source srcset="<%= require('./images/carSeats/carSeats_5.jpg?{ format: \'webp\'}')%>" type="image/webp">
-              <img src="<%= require('./images/carSeats/carSeats_5.jpg?{ format: \'jpg\'}')%>" alt="автокресло Monza Nova IS" type="image/png">
+              <source srcset="<%= require('./images/carSeats/carSeats_5.jpg?{sizes:[400], format: \'webp\'}')%>" type="image/webp">
+              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_5.jpg?{sizes:[400], format: \'jpg\'}')%>" alt="автокресло Monza Nova IS" type="image/png">
             </picture>
 
             <div class="carSeats__signature">
@@ -335,16 +341,16 @@
       </div>
 
 
-    </section> -->
+    </section>
     <!-- CARSEATS END -->
 
 
     <!-- ARTICLE START -->
-    <!-- <article class="article">
+    <article class="article article_margin">
 
       <div class="article__attention">
         <p class="article__conclusion">
-          Автокресла RECARO дополнительно оснащены боковой защитой ASP (Advanced Side Protection). При боковом ударе защита ASP поглощает энергию столкновения, уменьшает силу воздействия на ребенка
+          Автокресла <a href="https://www.recarokidsrussia.ru/?utm_source=hype&utm_medium=article&utm_campaign=hypetech" class="article__conclusionLink">RECARO</a> дополнительно оснащены боковой защитой ASP (Advanced Side Protection). При боковом ударе защита ASP поглощает энергию столкновения, уменьшает силу воздействия на ребенка
           и обеспечивает максимальную защиту.
         </p>
       </div>
@@ -359,7 +365,8 @@
 
       <div class="article__attention">
         <p class="article__conclusion">
-          Чехлы автокресел RECARO быстро и легко снимаются.
+          Чехлы автокресел
+          быстро и легко снимаются.
           В дороге это становится большим плюсом, если ребенок обольется или испачкается – во время ночевки в отеле вы сможете снять чехол и застирать пятно,
           а с утра снова надеть его на кресло.
           В повседневной жизни чехол можно стирать
@@ -367,7 +374,7 @@
         </p>
       </div>
 
-    </article> -->
+    </article>
     <!-- ARTICLE END -->
   </div>
 

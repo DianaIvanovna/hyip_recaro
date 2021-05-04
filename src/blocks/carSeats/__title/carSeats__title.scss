@@ -4,4 +4,10 @@
   margin: 100px auto 40px;
 
   width: 83%;
+  @media screen and (max-width:600px){
+    width: 100%;
+    padding: 100px 10px 40px;
+    margin: 0;
+    box-sizing: border-box;
+  }
 }

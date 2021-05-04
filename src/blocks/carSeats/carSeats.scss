@@ -16,4 +16,9 @@
   background-color: $back_dark;
   border-radius: 10px;
   margin-bottom: 125px;
+  @media screen and (max-width:600px){
+    position: relative;
+    width: calc(100% + 20px);
+    left: -10px;
+  }
 }
