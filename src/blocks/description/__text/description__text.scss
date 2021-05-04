@@ -4,4 +4,8 @@
   @include fontValue(normal, normal, 36px, 130%);
   color: $text_color;
   margin: 0;
+
+  @media screen and (max-width:600px) {
+    @include fontValue(normal, normal, 30px, 130%);
+  }
 }
