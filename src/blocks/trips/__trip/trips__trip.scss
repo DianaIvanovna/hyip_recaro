@@ -3,4 +3,14 @@
   padding: 60px 0;
   border-bottom: 1px solid #fff;
   position: relative;
+
+  @media screen and (max-width:1200px) {
+    flex-direction: column;
+  }
+}
+
+.trips__trip_reverse {
+  @media screen and (max-width:1200px) {
+    flex-direction: column-reverse;
+  }
 }

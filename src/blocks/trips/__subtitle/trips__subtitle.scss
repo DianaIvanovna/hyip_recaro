@@ -5,4 +5,8 @@
   margin: 0;
   margin-top: 40px;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, normal, 30px, 120%);
+  }
 }

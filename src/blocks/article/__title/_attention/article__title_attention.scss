@@ -3,4 +3,9 @@
   color: $text_attention;
   margin: 0;
   margin-bottom: 60px;
+
+  @media screen and (max-width:600px){
+    @include fontValue(normal, normal, 30px, 130%);
+  }
+
 }

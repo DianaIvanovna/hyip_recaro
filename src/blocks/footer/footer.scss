@@ -2,6 +2,9 @@
   @include fontValue(normal, 300, 20px, 150%);
   text-align: center;
   color: $text_color;
-  width: 335px;
-  margin: 0 auto;
+  width: 100%;
+
+  @media screen and (max-width: 400px){
+    @include fontValue(normal, 300, 16px, 150%);
+  }
 }

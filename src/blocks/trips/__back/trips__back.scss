@@ -1,7 +1,10 @@
 .trips__back {
   position: absolute;
   z-index: 1;
-  object-position: 50% 50%
+  object-position: 50% 50%;
+  @media screen and (max-width:768px) {
+    display: none;
+  }
 }
 .trips__back_1 {
   left: -200px;
@@ -18,4 +21,9 @@
 .trips__back_4 {
   top: -380px;
   right: -180px;
+
+  @media screen and (max-width: 1200px){
+    display: none;
+
+  }
 }

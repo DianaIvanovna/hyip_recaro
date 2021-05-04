@@ -1,4 +1,18 @@
 .trips__img {
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  img {
+    object-fit: contain;
+  }
+
+  @media screen and (max-width:600px){
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
 }

@@ -7,4 +7,8 @@
   img{
     margin-right: 15px;
   }
+
+  @media screen and (max-width: 600px){
+    @include fontValue(normal, normal, 35px, 120%);
+  }
 }
