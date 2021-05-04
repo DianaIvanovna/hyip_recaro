@@ -7,4 +7,12 @@
   position: absolute;
   top: -30px;
   left: -8%;
+
+  @media screen and (max-width:1024px){
+    left: -10%;
+  }
+  @media screen and (max-width:768px) {
+    position: static;
+    margin-right: 10px;
+  }
 }

@@ -6,4 +6,16 @@
   color: $text_color;
   margin: 0;
   margin-bottom: 20px;
+
+  @media screen and (max-width:1024px){
+    @include fontValue(normal, normal, 38px, 120%);
+  }
+  @media screen and (max-width:768px){
+    margin-bottom: 0;
+    @include fontValue(normal, normal, 35px, 120%);
+
+  }
+  @media screen and (max-width:400px){
+    @include fontValue(normal, normal, 28px, 120%);
+  }
 }

@@ -1,19 +1,23 @@
 @import "./_carSeats/article__button_carSeats.scss";
 
 .article__button {
-  padding: 20px 15px;
+  padding: 0 15px;
   background: $button_attention;
   border-radius: 10px;
   width: 255px;
   margin: 0 auto;
   box-shadow: none;
   border: none;
+  box-sizing: border-box;
 
   a{
-    @include fontValue(normal, normal, 18px, 24px);
+    @include fontValue(normal, normal, 18px, 64px);
     color: $text_attention;
     text-align: center;
     text-decoration: none;
+  }
 
+  @media screen and (max-width: 450px) {
+    width: 100%;
   }
 }

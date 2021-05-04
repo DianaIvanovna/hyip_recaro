@@ -9,4 +9,10 @@
   padding: 80px 10%;
   box-sizing: border-box;
   border-radius: 10px;
+
+  @media screen and (max-width:768px) {
+    width: 100%;
+    left: 0;
+    padding: 40px 15px;
+  }
 }
