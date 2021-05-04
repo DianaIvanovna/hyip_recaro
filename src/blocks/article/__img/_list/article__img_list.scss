@@ -2,7 +2,12 @@
   position: absolute;
   bottom: 5%;
   right: -5%;
-
+  @media screen and (max-width:1440px){
+    right: -70px;
+  }
+  @media screen and (max-width:1200px){
+    right: -30px;
+  }
   @media screen and (max-width:768px){
     position: static;
     width: 100%;

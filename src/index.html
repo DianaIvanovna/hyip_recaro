@@ -44,7 +44,7 @@
         <div class="preview__img_grid">
           <picture class="preview__img">
             <source srcset="<%= require('./images/background/grid.png?{ format: \'webp\'}')%>" type="image/webp">
-            <img src="<%= require('./images/background/grid.png?{ format: \'png\'}')%>" alt="карта" >
+            <img  width="465" height="700" src="<%= require('./images/background/grid.png?{ format: \'png\'}')%>" alt="карта" >
           </picture>
           <img class="preview__img_place" width="73" height="100" src="<%= require('./images/background/place.svg')%>" alt="иконка место">
         </div>
@@ -107,9 +107,13 @@
       <p class="article__text article__text_middle">Если вы не часто берете его с собой в поездки по городу, есть вероятность, что он не сможет просидеть в машине больше 30 минут – в этом случае поездка может быть испорчена с самого начала. Поэтому перед путешествием попробуйте приучить ребенка к автомобилю и покатайтесь вместе с ним по городу или пригороду, постепенно увеличивая длительность поездки. Это поможет понять поведение ребенка в автомобиле, приучит его к поездкам и автокреслу.</p>
 
       <div class="article__imgAndLink">
-        <picture class="article__img">
-          <source srcset="<%= require('./images/articles/photo_1.jpg?{ format: \'webp\'}')%>" type="image/webp">
-          <img width="996" height="501" src="<%= require('./images/articles/photo_1.jpg?{ format: \'jpg\'}')%>" alt="ребенок в автокресле" >
+        <picture class="article__img lazy_image">
+          <source data-srcset="<%= require('./images/articles/photo_1.jpg?{ format: \'webp\'}')%>" type="image/webp">
+          <img width="996" height="501"
+          src="<%= require('./images/articles/photo_1.jpg?{ format: \'jpg\'}')%>" alt="ребенок в автокресле"
+          data-srcset= "<%= require('./images/articles/photo_1.jpg?{ format: \'jpg\'}')%>"
+          srcset="<%= require('./images/articles/photo_1.jpg?{sizes:[996],placeholder: true}').placeholder %>"
+          >
         </picture>
         <a href="https://www.recarokidsrussia.ru/monza-nova-is.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" class="article__imgLink"> Monza Nova IS  </a>
       </div>
@@ -139,10 +143,15 @@
         Чтобы облегчить поездку, повесьте органайзер на пассажирское сиденье, перед которым сидит ребенок. В него можно положить игрушки, снеки, воду и книжки
         – так ребенок сможет сам дотянуться до нужного предмета и не будет отвлекать вас каждые пять минут. На задние окна также можно повесить шторку, которая защитит малыша от солнца и перегрева.</p>
 
-      <picture class="article__img">
-        <source srcset="<%= require('./images/articles/photo_2.jpg?{ format: \'webp\'}')%>" type="image/webp">
-        <img width="996" height="501" src="<%= require('./images/articles/photo_2.jpg?{ format: \'jpg\'}')%>" alt="отец с сыном в машине">
+      <picture class="article__img lazy_image">
+        <source data-srcset="<%= require('./images/articles/photo_2.jpg?{ format: \'webp\'}')%>" type="image/webp">
+        <img width="996" height="501"
+        src="<%= require('./images/articles/photo_2.jpg?{ format: \'jpg\'}')%>"
+        data-srcset= "<%= require('./images/articles/photo_2.jpg?{ format: \'jpg\'}')%>"
+        srcset="<%= require('./images/articles/photo_2.jpg?{placeholder: true}').placeholder %>"
+        alt="отец с сыном в машине">
       </picture>
+
 
     </article>
     <!-- ARTICLE END -->
@@ -222,10 +231,16 @@
           </div>
           <div class="carSeats__imgContainer"
           onclick="document.location.href = 'https://www.recarokidsrussia.ru/avan.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
-            <picture class="carSeats__img">
-              <source srcset="<%= require('./images/carSeats/carSeats_1.jpg?{ sizes:[400], format: \'webp\'}')%>" type="image/webp">
-              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_1.jpg?{ sizes:[400], format: \'jpg\'}')%>" alt="автокресло Avan">
+            <picture class="carSeats__img lazy_image">
+              <source data-srcset="<%= require('./images/carSeats/carSeats_1.jpg?{ sizes:[400], format: \'webp\'}')%>" type="image/webp">
+              <img width="400" height="316"
+              src="<%= require('./images/carSeats/carSeats_1.jpg?{ format: \'jpg\'}')%>"
+              data-srcset= "<%= require('./images/carSeats/carSeats_1.jpg?{ format: \'jpg\'}')%>"
+              srcset="<%= require('./images/carSeats/carSeats_1.jpg?{sizes:[400],placeholder: true}').placeholder %>"
+              alt="автокресло Avan">
             </picture>
+
+
 
             <div class="carSeats__signature">
               <p class="carSeats__name">Avan</p>
@@ -248,9 +263,13 @@
           </div>
           <div class="carSeats__imgContainer"
           onclick="document.location.href = 'https://www.recarokidsrussia.ru/salia-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
-            <picture class="carSeats__img">
-              <source srcset="<%= require('./images/carSeats/carSeats_2.jpg?{sizes:[400], format: \'webp\'}')%>" type="image/webp">
-              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_2.jpg?{sizes:[400], format: \'jpg\'}')%>" alt="автокресло Salia Elite" >
+            <picture class="carSeats__img lazy_image">
+              <source data-srcset="<%= require('./images/carSeats/carSeats_2.jpg?{sizes:[400], format: \'webp\'}')%>" type="image/webp">
+              <img width="400" height="316"
+              src="<%= require('./images/carSeats/carSeats_2.jpg?{ format: \'jpg\'}')%>"
+              data-srcset= "<%= require('./images/carSeats/carSeats_2.jpg?{ format: \'jpg\'}')%>"
+              srcset="<%= require('./images/carSeats/carSeats_2.jpg?{sizes:[400],placeholder: true}').placeholder %>"
+              alt="автокресло Salia Elite" >
             </picture>
 
             <div class="carSeats__signature">
@@ -273,9 +292,13 @@
           </div>
           <div class="carSeats__imgContainer"
           onclick="document.location.href = 'https://www.recarokidsrussia.ru/kio.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
-            <picture class="carSeats__img">
-              <source srcset="<%= require('./images/carSeats/carSeats_3.jpg?{ sizes:[400],format: \'webp\'}')%>" type="image/webp">
-              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_3.jpg?{ sizes:[400],format: \'jpg\'}')%>" alt="автокресло Kio" >
+            <picture class="carSeats__img lazy_image">
+              <source data-srcset="<%= require('./images/carSeats/carSeats_3.jpg?{ sizes:[400],format: \'webp\'}')%>" type="image/webp">
+              <img width="400" height="316"
+              src="<%= require('./images/carSeats/carSeats_3.jpg?{ format: \'jpg\'}')%>"
+              data-srcset= "<%= require('./images/carSeats/carSeats_3.jpg?{ format: \'jpg\'}')%>"
+              srcset="<%= require('./images/carSeats/carSeats_3.jpg?{sizes:[400],placeholder: true}').placeholder %>"
+              alt="автокресло Kio" >
             </picture>
 
             <div class="carSeats__signature">
@@ -298,9 +321,13 @@
           </div>
           <div class="carSeats__imgContainer"
           onclick="document.location.href = 'https://www.recarokidsrussia.ru/mako-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
-            <picture class="carSeats__img">
-              <source srcset="<%= require('./images/carSeats/carSeats_4.jpg?{ sizes:[400], format: \'webp\'}')%>" type="image/webp">
-              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_4.jpg?{ sizes:[400], format: \'jpg\'}')%>" alt="автокресло Mako Elite">
+            <picture class="carSeats__img lazy_image">
+              <source data-srcset="<%= require('./images/carSeats/carSeats_4.jpg?{ sizes:[400], format: \'webp\'}')%>" type="image/webp">
+              <img width="400" height="316"
+              src="<%= require('./images/carSeats/carSeats_4.jpg?{ format: \'jpg\'}')%>"
+              data-srcset= "<%= require('./images/carSeats/carSeats_4.jpg?{ format: \'jpg\'}')%>"
+              srcset="<%= require('./images/carSeats/carSeats_4.jpg?{sizes:[400],placeholder: true}').placeholder %>"
+              alt="автокресло Mako Elite">
             </picture>
 
             <div class="carSeats__signature">
@@ -323,9 +350,14 @@
           </div>
           <div class="carSeats__imgContainer"
           onclick="document.location.href = 'https://www.recarokidsrussia.ru/monza-nova-is.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
-            <picture class="carSeats__img">
-              <source srcset="<%= require('./images/carSeats/carSeats_5.jpg?{sizes:[400], format: \'webp\'}')%>" type="image/webp">
-              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_5.jpg?{sizes:[400], format: \'jpg\'}')%>" alt="автокресло Monza Nova IS" >
+            <picture class="carSeats__img lazy_image">
+              <source data-srcset="<%= require('./images/carSeats/carSeats_5.jpg?{sizes:[400], format: \'webp\'}')%>" type="image/webp">
+              <img width="400" height="316"
+              src="<%= require('./images/carSeats/carSeats_5.jpg?{ format: \'jpg\'}')%>"
+              data-srcset= "<%= require('./images/carSeats/carSeats_5.jpg?{ format: \'jpg\'}')%>"
+              srcset="<%= require('./images/carSeats/carSeats_5.jpg?{sizes:[400],placeholder: true}').placeholder %>"
+
+              alt="автокресло Monza Nova IS" >
             </picture>
 
             <div class="carSeats__signature">
@@ -404,9 +436,15 @@
       не гулять с ребенком около проезжей части. Не забудьте скачать оффлайн-карты,
       чтобы в один момент не остаться без навигации.</p>
 
-      <picture class="article__img ">
-        <source srcset="<%= require('./images/articles/photo_4.jpg?{ format: \'webp\'}')%>" type="image/webp">
-        <img width="996" height="501" src="<%= require('./images/articles/photo_4.jpg?{ format: \'jpg\'}')%>" alt="карта" >
+      <picture class="article__img lazy_image">
+        <source data-srcset="<%= require('./images/articles/photo_4.jpg?{ format: \'webp\'}')%>" type="image/webp">
+        <img width="996" height="501"
+
+        src="<%= require('./images/articles/photo_4.jpg?{ format: \'jpg\'}')%>"
+        data-srcset= "<%= require('./images/articles/photo_4.jpg?{ format: \'jpg\'}')%>"
+        srcset="<%= require('./images/articles/photo_4.jpg?{sizes:[996],placeholder: true}').placeholder %>"
+
+        alt="карта" >
       </picture>
 
 
@@ -433,9 +471,15 @@
       <p class="article__text">Не забывайте и о напитках – в автомобилях всегда сухой воздух, из-за которого пить хочется еще больше. В машине обязательно должны быть бутылки с простой питьевой водой, при желании с собой можно взять соки или морсы с трубочкой. Чтобы напитки не нагрелись в машине, можно положить их в небольшую сумку-холодильник.</p>
 
       <div class="article__imgAndLink">
-        <picture class="article__img">
-          <source srcset="<%= require('./images/articles/photo_5.jpg?{ format: \'webp\'}')%>" type="image/webp">
-          <img width="996" height="501" src="<%= require('./images/articles/photo_5.jpg?{ format: \'jpg\'}')%>" alt="карта" >
+        <picture class="article__img lazy_image">
+          <source data-srcset="<%= require('./images/articles/photo_5.jpg?{ format: \'webp\'}')%>" type="image/webp">
+          <img width="996" height="501"
+
+          src="<%= require('./images/articles/photo_5.jpg?{ format: \'jpg\'}')%>"
+          data-srcset= "<%= require('./images/articles/photo_5.jpg?{ format: \'jpg\'}')%>"
+          srcset="<%= require('./images/articles/photo_5.jpg?{sizes:[996],placeholder: true}').placeholder %>"
+
+          alt="ребенок в машине " >
         </picture>
         <a href="https://www.recarokidsrussia.ru/kio.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" class="article__imgLink">Kio</a>
       </div>
@@ -497,9 +541,15 @@
 
         </ul>
 
-        <picture class="article__img_list">
-          <source srcset="<%= require('./images/firstAidKit_picture.png?{ format: \'webp\'}')%>" type="image/webp">
-          <img width="428" height="490" src="<%= require('./images/firstAidKit_picture.png?{ format: \'png\'}')%>" alt="аптечка" >
+        <picture class="article__img_list lazy_image">
+          <source data-srcset="<%= require('./images/firstAidKit_picture.png?{ format: \'webp\'}')%>" type="image/webp">
+          <img width="428" height="490"
+
+          src="<%= require('./images/firstAidKit_picture.png?{ format: \'png\'}')%>"
+          data-srcset= "<%= require('./images/firstAidKit_picture.png?{ format: \'png\'}')%>"
+          srcset="<%= require('./images/firstAidKit_picture.png?{sizes:[428],placeholder: true}').placeholder %>"
+
+          alt="аптечка" >
 
         </picture>
 
@@ -528,10 +578,17 @@
       </p>
 
       <div class="article__imgAndLink">
-        <picture class="article__img">
-          <source srcset="<%= require('./images/articles/photo_3.jpg?{ format: \'webp\'}')%>" type="image/webp">
-          <img width="996" height="501" src="<%= require('./images/articles/photo_3.jpg?{ format: \'jpg\'}')%>" alt="карта" >
+        <picture class="article__img lazy_image">
+          <source data-srcset="<%= require('./images/articles/photo_3.jpg?{ format: \'webp\'}')%>" type="image/webp">
+          <img width="996" height="501"
+
+          src="<%= require('./images/articles/photo_3.jpg?{ format: \'jpg\'}')%>"
+          data-srcset= "<%= require('./images/articles/photo_3.jpg?{ format: \'jpg\'}')%>"
+          srcset="<%= require('./images/articles/photo_3.jpg?{sizes:[996],placeholder: true}').placeholder %>"
+
+          alt="мама и ребенок в коляске" >
         </picture>
+
         <a href="https://www.recarokidsrussia.ru/salia-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" class="article__imgLink article__imgLink_nodecoration">
           <span>Salia Elite</span>
           , совмещенное с коляской-трансформером Sadena
@@ -556,9 +613,15 @@
       от RECARO встроена звуковая система, к которой можно подключить телефон или планшет. Так ребенок может слушать сказки или любимые песни, пока родители слушают радио или подкасты.
       </p>
       <div class="article__imgAndLink">
-        <picture class="article__img">
-          <source srcset="<%= require('./images/articles/photo_6.jpg?{ format: \'webp\'}')%>" type="image/webp">
-          <img width="996" height="501" src="<%= require('./images/articles/photo_6.jpg?{ format: \'jpg\'}')%>" alt="ребенок в автокресле" >
+        <picture class="article__img lazy_image">
+          <source data-srcset="<%= require('./images/articles/photo_6.jpg?{ format: \'webp\'}')%>" type="image/webp">
+          <img width="996" height="501"
+
+          src="<%= require('./images/articles/photo_6.jpg?{ format: \'jpg\'}')%>"
+          data-srcset= "<%= require('./images/articles/photo_6.jpg?{ format: \'jpg\'}')%>"
+          srcset="<%= require('./images/articles/photo_6.jpg?{sizes:[996],placeholder: true}').placeholder %>"
+
+          alt="ребенок в автокресле" >
         </picture>
 
         <a href="https://www.recarokidsrussia.ru/mako-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" class="article__imgLink article__imgLink_nodecoration">
@@ -592,9 +655,15 @@
             <div class="trips__trip">
               <img class="trips__back trips__back_1" width="774" height="1146" src="<%= require('./images/wave.svg')%>" alt="волна" >
 
-              <picture class="trips__img">
-                <source srcset="<%= require('./images/trip/trip_1.png?{ format: \'webp\'}')%>" type="image/webp">
-                <img  width="528" height="544" src="<%= require('./images/trip/trip_1.png?{ format: \'png\'}')%>" alt="Крым" >
+              <picture class="trips__img lazy_image">
+                <source data-srcset="<%= require('./images/trip/trip_1.png?{ format: \'webp\'}')%>" type="image/webp">
+                <img  width="528" height="544"
+
+                src="<%= require('./images/trip/trip_1.png?{ format: \'png\'}')%>"
+                data-srcset= "<%= require('./images/trip/trip_1.png?{ format: \'png\'}')%>"
+                srcset="<%= require('./images/trip/trip_1.png?{sizes:[528],placeholder: true}').placeholder %>"
+
+                alt="Крым" >
               </picture>
 
               <div class="">
@@ -638,9 +707,15 @@
                   на водопады в Домбае.</p>
               </div>
 
-              <picture class="trips__img">
-                <source srcset="<%= require('./images/trip/trip_2.png?{ format: \'webp\'}')%>" type="image/webp">
-                <img width="528" height="544" src="<%= require('./images/trip/trip_2.png?{ format: \'png\'}')%>" alt="Кавказские горы" >
+              <picture class="trips__img lazy_image">
+                <source data-srcset="<%= require('./images/trip/trip_2.png?{ format: \'webp\'}')%>" type="image/webp">
+                <img width="528" height="544"
+
+                src="<%= require('./images/trip/trip_2.png?{ format: \'png\'}')%>"
+                data-srcset= "<%= require('./images/trip/trip_2.png?{ format: \'png\'}')%>"
+                srcset="<%= require('./images/trip/trip_2.png?{sizes:[528],placeholder: true}').placeholder %>"
+
+                alt="Кавказские горы" >
               </picture>
 
             </div>
@@ -648,9 +723,15 @@
             <div class="trips__trip">
               <img width="710" height="1824" class="trips__back trips__back_3" src="<%= require('./images/wave_3.svg')%>" alt="волна" >
 
-              <picture class="trips__img">
-                <source srcset="<%= require('./images/trip/trip_3.png?{ format: \'webp\'}')%>" type="image/webp">
-                <img width="528" height="544" src="<%= require('./images/trip/trip_3.png?{ format: \'png\'}')%>" alt="Байкал" >
+              <picture class="trips__img lazy_image">
+                <source data-srcset="<%= require('./images/trip/trip_3.png?{ format: \'webp\'}')%>" type="image/webp">
+                <img width="528" height="544"
+
+                src="<%= require('./images/trip/trip_3.png?{ format: \'png\'}')%>"
+                data-srcset= "<%= require('./images/trip/trip_3.png?{ format: \'png\'}')%>"
+                srcset="<%= require('./images/trip/trip_3.png?{sizes:[528],placeholder: true}').placeholder %>"
+
+                alt="Байкал" >
               </picture>
 
               <div class="">
@@ -685,9 +766,15 @@
                   и прогуляться по набережной Петрозаводска.</p>
               </div>
 
-              <picture class="trips__img">
-                <source srcset="<%= require('./images/trip/trip_4.png?{ format: \'webp\'}')%>" type="image/webp">
-                <img width="528" height="544" src="<%= require('./images/trip/trip_4.png?{ format: \'png\'}')%>" alt="Карелия" >
+              <picture class="trips__img lazy_image">
+                <source data-srcset="<%= require('./images/trip/trip_4.png?{ format: \'webp\'}')%>" type="image/webp">
+                <img width="528" height="544"
+
+                src="<%= require('./images/trip/trip_4.png?{ format: \'png\'}')%>"
+                data-srcset= "<%= require('./images/trip/trip_4.png?{ format: \'png\'}')%>"
+                srcset="<%= require('./images/trip/trip_4.png?{sizes:[528],placeholder: true}').placeholder %>"
+
+                alt="Карелия" >
               </picture>
 
             </div>
