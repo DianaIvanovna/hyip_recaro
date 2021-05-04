@@ -1,6 +1,21 @@
 .preview__subtitle {
   @include fontValue(normal, 300, 36px, 130%);
   color: $title_color;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   margin: 0;
+
+  position: relative;
+  z-index: 5;
+  @media screen and (max-width: 1024px) {
+    @include fontValue(normal, 300, 32px, 130%);
+  }
+
+  @media screen and (max-width: 600px) {
+    @include fontValue(normal, 300, 28px, 130%);
+  }
+  @media screen and (max-width: 400px) {
+    @include fontValue(normal, 300, 21px, 130%);
+  }
+
 }

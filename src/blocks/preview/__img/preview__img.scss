@@ -1,5 +1,68 @@
+// .preview__img {
+//   position: absolute;
+//   top: -10px;
+//   right: 0;
+// }
+
 .preview__img {
+  display: flex;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.preview__img_family {
   position: absolute;
-  top: -10px;
+  right: 50px;
+  bottom: 0;
+  z-index: 3;
+  @media screen and (max-width:1024px){
+    width: 50%;
+    right: 0;
+  }
+  @media screen and (max-width:600px){
+    width: 80%;
+    right: -20px;
+  }
+}
+
+.preview__img_grid {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  z-index: 1;
+  @media screen and (max-width:1024px){
+    width: 50%;
+    right: 0;
+  }
+  @media screen and (max-width:600px){
+    display: none;
+  }
+}
+.preview__img_place {
+  position: absolute;
+  left: -20px;;
+  top: calc(50% - 50px);
+  z-index: 1;
+
+  @media screen and (max-width:1280px){
+    display: none;
+  }
+}
+
+.preview__img_car {
+  position: absolute;
   right: 0;
+  bottom: 0;
+  z-index: 2;
+  @media screen and (max-width:1024px){
+    width: 100%;
+  }
+  @media screen and (max-width:600px){
+    width: 110%;
+    right: auto;
+    left: 0;
+  }
 }

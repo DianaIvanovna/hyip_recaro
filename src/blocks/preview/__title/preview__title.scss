@@ -2,7 +2,23 @@
   @include fontValue(normal, 500, 64px, 110%);
 
   color: $title_color;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   margin: 0;
   margin-bottom: 36px;
+
+  @media screen and (max-width: 1024px) {
+    @include fontValue(normal, 500, 48px, 110%);
+  }
+
+  @media screen and (max-width: 600px) {
+    @include fontValue(normal, 500, 42px, 110%);
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 400px) {
+    @include fontValue(normal, 500, 32px, 110%);
+  }
+
+  position: relative;
+  z-index: 5;
 }

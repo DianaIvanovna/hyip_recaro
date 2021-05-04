@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Хайп / Recaro</title>
 </head>
+
+<!-- адпативные картинки
+ширина на всех картинках
+ссылки проставить -->
+
 <body>
   <header class="header">
     <div class="header__content">
-      <img src="<%= require('./images/logo_hyip.svg')%>" width="100px" height="29px" alt="логотип хайп">
-      <img src="<%= require('./images/logo_recaro.svg')%>" width="160px" height="29px" alt="логотип Recaro">
+      <img class="header__logo_1" src="<%= require('./images/logo_hyip.svg')%>" width="100px" height="29px" alt="логотип хайп">
+      <img class="header__logo_2" src="<%= require('./images/logo_recaro.svg')%>" width="160px" height="29px" alt="логотип Recaro">
     </div>
   </header>
 
@@ -20,15 +25,35 @@
       <h1 class="preview__title">Как отправиться<br>в автопутешествие с ребенком? </h1>
       <p class="preview__subtitle">Памятка, которая сохранит ваши нервные клетки</p>
 
-      <picture class="preview__img">
-        <source srcset="<%= require('./images/background/back_family.png?{ format: \'webp\'}')%>" type="image/webp">
-        <img src="<%= require('./images/background/back_family.png?{ format: \'png\'}')%>" alt="" type="image/png">
-      </picture>
+      <div class="preview__imgContainer">
+
+        <picture class="preview__img preview__img_family">
+          <source srcset="<%= require('./images/background/family.png?{sizes:[556], format: \'webp\'}')%>" type="image/webp">
+          <source media="(min-width: 768px)" srcset="<%= require('./images/background/family.png?{sizes:[300], format: \'webp\'}')%>" type="image/webp">
+
+          <img  width="556" height="760" src="<%= require('./images/background/family.png?{sizes:[556], format: \'png\'}')%>" alt="картинка семьи" type="image/png">
+        </picture>
+
+        <picture class="preview__img preview__img_car">
+          <source srcset="<%= require('./images/background/car.png?{ format: \'webp\'}')%>" type="image/webp">
+          <source media="(min-width: 768px)" srcset="<%= require('./images/background/car.png?{sizes:[600], format: \'webp\'}')%>" type="image/webp">
+          <img width="999" height="338" src="<%= require('./images/background/car.png?{ format: \'png\'}')%>" alt="картинка машина" type="image/png">
+        </picture>
+
+        <div class="preview__img_grid">
+          <picture class="preview__img">
+            <source srcset="<%= require('./images/background/grid.png?{ format: \'webp\'}')%>" type="image/webp">
+            <img src="<%= require('./images/background/grid.png?{ format: \'png\'}')%>" alt="карта" type="image/png">
+          </picture>
+          <img class="preview__img_place" width="73px" height="100px" src="<%= require('./images/background/place.svg')%>" alt="иконка место">
+        </div>
+      </div>
+
     </section>
     <!-- PREVIEW END -->
 
     <!-- DESCRIPTION START -->
-    <section class="description">
+    <!-- <section class="description">
       <div class="description__block_first">
         <p class="description__text">
           Поездка на собственном автомобиле в другой город или страну – самое настоящее путешествие, которое стоит совершить хотя бы раз в жизни.
@@ -46,11 +71,11 @@
         </p>
 
       </div>
-    </section>
+    </section> -->
     <!-- DESCRIPTION END -->
 
     <!-- tableOfContents добавь плавный переход по ссылкам -->
-    <section class="tableOfContents">
+    <!-- <section class="tableOfContents">
       <ul class="tableOfContents_list">
         <li class="tableOfContents_link"><a href="#">Как подготовить ребенка к поездке?</a></li>
         <li class="tableOfContents_link"><a href="#">Как подготовить автомобиль?</a></li>
@@ -61,11 +86,11 @@
         <li class="tableOfContents_link"><a href="#">Чем развлечь ребенка в дороге?</a></li>
         <li class="tableOfContents_link"><a href="#">Куда поехать?</a></li>
       </ul>
-    </section>
+    </section> -->
     <!-- tableOfContents добавь плавный переход по ссылкам -->
 
     <!-- ARTICLE START -->
-    <article class="article">
+    <!-- <article class="article">
       <span class="article__number">1</span>
       <h2 class="article__title">Как подготовить ребенка к поездке?</h2>
       <p class="article__text">С детьми до 6 месяцев путешествовать на автомобиле проще всего – почти всю дорогу они спят, едят и снова спят. Зато с детьми от полугода до двух-трех лет не заскучаешь.
@@ -89,11 +114,11 @@
         <a href="#">Подобрать автокресло</a>
       </button>
 
-    </article>
+    </article> -->
     <!-- ARTICLE END -->
 
     <!-- ARTICLE START -->
-    <article class="article">
+    <!-- <article class="article">
       <span class="article__number">2</span>
       <h2 class="article__title">Как подготовить автомобиль?</h2>
       <p class="article__text">Приберитесь в автомобиле перед поездкой: пропылесосьте, протрите все поверхности, выбросьте мусор и избавьтесь от ненужных вещей в салоне, чтобы освободить место для багажа. Заднее сиденье и пол под ногами ребенка можно накрыть одноразовыми пеленками или старыми простынями – во время остановки вы сможете быстро вытряхнуть все крошки и будете меньше переживать из-за мусора. </p>
@@ -113,11 +138,11 @@
         <img src="<%= require('./images/articles/photo_2.jpg?{ format: \'jpg\'}')%>" alt="отец с сыном в машине" type="image/jpg">
       </picture>
 
-    </article>
+    </article> -->
     <!-- ARTICLE END -->
 
     <!-- ARTICLE START -->
-    <article class="article">
+    <!-- <article class="article">
       <span class="article__number">3</span>
       <h2 class="article__title">Как выбрать автокресло?</h2>
       <p class="article__text">Порой родители пренебрегают законом и пытаются обойтись без детского автокресла во время поездки. Однако не стоит надеяться на удачу, когда речь заходит
@@ -165,11 +190,11 @@
 
       </div>
 
-    </article>
+    </article> -->
     <!-- ARTICLE END -->
 
     <!-- CARSEATS START добавь ссылку на кресла-->
-    <section class="carSeats">
+    <!-- <section class="carSeats">
 
       <h2 class="carSeats__title">В стандарте i-Size автокресла делятся на группы:</h2>
 
@@ -304,12 +329,12 @@
       </div>
 
 
-    </section>
+    </section> -->
     <!-- CARSEATS END -->
 
 
     <!-- ARTICLE START -->
-    <article class="article">
+    <!-- <article class="article">
 
       <div class="article__attention">
         <p class="article__conclusion">
@@ -336,7 +361,7 @@
         </p>
       </div>
 
-    </article>
+    </article> -->
     <!-- ARTICLE END -->
   </div>
 
@@ -344,7 +369,7 @@
 
   <div class="main">
     <!-- ARTICLE START -->
-    <article class="article">
+    <!-- <article class="article">
       <span class="article__number">4</span>
       <h2 class="article__title">Как спланировать маршрут?</h2>
       <p class="article__text">Поездка с ребенком сильно отличается от поездки со взрослыми, поэтому
@@ -371,11 +396,11 @@
       Ребенок еще будет спать, а у вас будет достаточно энергии, чтобы к ужину доехать
       до отеля, переночевать и снова отправиться в путь. Также можно запланировать время выезда на дневной сон ребенка. Через пару часов дороги ребенок уснет и наберется сил, а оставшееся время пройдет легко. </p>
 
-    </article>
+    </article> -->
     <!-- ARTICLE END -->
 
     <!-- ARTICLE START -->
-    <article class="article">
+    <!-- <article class="article">
       <span class="article__number">5</span>
       <h2 class="article__title">Что взять с собой в поездку?</h2>
       <p class="article__text">У каждого родителя есть свой список необходимых вещей для путешествий, который формируется из потребностей семьи и ребенка. Мы подготовили список универсальных вещей, которые точно пригодятся родителям в долгой дороге. </p>
@@ -484,11 +509,11 @@
         </a>
       </picture>
 
-    </article>
+    </article> -->
     <!-- ARTICLE END -->
 
     <!-- ARTICLE START -->
-    <article class="article">
+    <!-- <article class="article">
       <span class="article__number">6</span>
       <h2 class="article__title">Чем развлечь ребенка в дороге?</h2>
       <p class="article__text">Возьмите с собой планшет с заранее скачанными аудиосказками – с ними ребенок сможет и развлечься, и быстро заснуть в дороге. В путешествии также пригодятся и мультфильмы, но лучше всего использовать их только в крайнем случае, если малыш сильно раскапризничается, так как просмотр мультфильмов в движении может спровоцировать сильный приступ тошноты.
@@ -512,11 +537,11 @@
         <a href="https://www.recarokidsrussia.ru/child-seats.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech">Подобрать автокресло</a>
       </button>
 
-    </article>
+    </article> -->
     <!-- ARTICLE END -->
 
     <!-- КУДА ПОЕХАТЬ START -->
-    <section class="trips">
+    <!-- <section class="trips">
       <div class="trips__container">
         <article class="article article_dark ">
           <div class="article__titleContainer">
@@ -633,13 +658,13 @@
 
 
       </div>
-    </section>
+    </section> -->
     <!-- КУДА ПОЕХАТЬ END -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <p  class="footer__signature">Сделано в креативном бюро «Хайп»
         ©2021</p>
-    </footer>
+    </footer> -->
   </div>
 </body>
 </html>
