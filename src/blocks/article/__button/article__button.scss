@@ -10,12 +10,10 @@
   border: none;
   box-sizing: border-box;
 
-  a{
-    @include fontValue(normal, normal, 18px, 64px);
-    color: $text_attention;
-    text-align: center;
-    text-decoration: none;
-  }
+  @include fontValue(normal, normal, 18px, 64px);
+  color: $text_attention;
+  text-align: center;
+  text-decoration: none;
 
   @media screen and (max-width: 450px) {
     width: 100%;

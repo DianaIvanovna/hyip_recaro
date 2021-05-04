@@ -94,6 +94,7 @@ module.exports = {
             loader: 'responsive-loader',
             options: {
                 adapter: sharpAdapter,
+                name:  `./images/[hash]-[width].[ext]`
             }
         }
       },

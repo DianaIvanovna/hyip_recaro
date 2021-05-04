@@ -15,8 +15,8 @@
 <body>
   <header class="header">
     <div class="header__content">
-      <img class="header__logo_1" src="<%= require('./images/logo_hyip.svg')%>" width="100px" height="29px" alt="логотип хайп">
-      <img class="header__logo_2" src="<%= require('./images/logo_recaro.svg')%>" width="160px" height="29px" alt="логотип Recaro" onclick="document.location.href='https://www.recarokidsrussia.ru/?utm_source=hype&utm_medium=article&utm_campaign=hypetech'">
+      <img class="header__logo_1" src="<%= require('./images/logo_hyip.svg')%>" width="100" height="29" alt="логотип хайп">
+      <img class="header__logo_2" src="<%= require('./images/logo_recaro.svg')%>" width="160" height="29" alt="логотип Recaro" onclick="document.location.href='https://www.recarokidsrussia.ru/?utm_source=hype&utm_medium=article&utm_campaign=hypetech'">
     </div>
   </header>
 
@@ -32,21 +32,21 @@
           <source srcset="<%= require('./images/background/family.png?{sizes:[556], format: \'webp\'}')%>" type="image/webp">
           <source media="(min-width: 768px)" srcset="<%= require('./images/background/family.png?{sizes:[300], format: \'webp\'}')%>" type="image/webp">
 
-          <img  width="556" height="760" src="<%= require('./images/background/family.png?{sizes:[556], format: \'png\'}')%>" alt="картинка семьи" type="image/png">
+          <img  width="556" height="760" src="<%= require('./images/background/family.png?{sizes:[556], format: \'png\'}')%>" alt="картинка семьи" >
         </picture>
 
         <picture class="preview__img preview__img_car">
           <source srcset="<%= require('./images/background/car.png?{ format: \'webp\'}')%>" type="image/webp">
           <source media="(min-width: 768px)" srcset="<%= require('./images/background/car.png?{sizes:[600], format: \'webp\'}')%>" type="image/webp">
-          <img width="999" height="338" src="<%= require('./images/background/car.png?{ format: \'png\'}')%>" alt="картинка машина" type="image/png">
+          <img width="999" height="338" src="<%= require('./images/background/car.png?{ format: \'png\'}')%>" alt="картинка машина">
         </picture>
 
         <div class="preview__img_grid">
           <picture class="preview__img">
             <source srcset="<%= require('./images/background/grid.png?{ format: \'webp\'}')%>" type="image/webp">
-            <img src="<%= require('./images/background/grid.png?{ format: \'png\'}')%>" alt="карта" type="image/png">
+            <img src="<%= require('./images/background/grid.png?{ format: \'png\'}')%>" alt="карта" >
           </picture>
-          <img class="preview__img_place" width="73px" height="100px" src="<%= require('./images/background/place.svg')%>" alt="иконка место">
+          <img class="preview__img_place" width="73" height="100" src="<%= require('./images/background/place.svg')%>" alt="иконка место">
         </div>
       </div>
 
@@ -56,9 +56,9 @@
     <!-- DESCRIPTION START -->
     <section class="description">
       <div class="description__block_first">
-        <p class="description__text">
+        <h3 class="description__text">
           Поездка на собственном автомобиле в другой город или страну – самое настоящее путешествие, которое стоит совершить хотя бы раз в жизни.
-        </p>
+        </h3>
       </div>
       <div class="description__block_second">
         <p class="description__text_second">
@@ -76,7 +76,7 @@
     <!-- DESCRIPTION END -->
 
     <!-- tableOfContents добавь плавный переход по ссылкам -->
-    <section class="tableOfContents">
+    <div class="tableOfContents">
       <ul class="tableOfContents_list">
         <li class="tableOfContents_link"><a href="#childTrip">Как подготовить ребенка к поездке?</a></li>
         <li class="tableOfContents_link"><a href="#carPreparation">Как подготовить автомобиль?</a></li>
@@ -87,7 +87,7 @@
         <li class="tableOfContents_link"><a href="#entertainChild">Чем развлечь ребенка в дороге?</a></li>
         <li class="tableOfContents_link"><a href="#whereToGo">Куда поехать?</a></li>
       </ul>
-    </section>
+    </div>
     <!-- tableOfContents добавь плавный переход по ссылкам -->
 
     <!-- ARTICLE START childTrip-->
@@ -106,15 +106,16 @@
       </div>
       <p class="article__text article__text_middle">Если вы не часто берете его с собой в поездки по городу, есть вероятность, что он не сможет просидеть в машине больше 30 минут – в этом случае поездка может быть испорчена с самого начала. Поэтому перед путешествием попробуйте приучить ребенка к автомобилю и покатайтесь вместе с ним по городу или пригороду, постепенно увеличивая длительность поездки. Это поможет понять поведение ребенка в автомобиле, приучит его к поездкам и автокреслу.</p>
 
-      <picture class="article__img">
-        <source srcset="<%= require('./images/articles/photo_1.jpg?{ format: \'webp\'}')%>" type="image/webp">
-        <img width="996" height="501px" src="<%= require('./images/articles/photo_1.jpg?{ format: \'jpg\'}')%>" alt="ребенок в автокресле" type="image/jpg">
-
+      <div class="article__imgAndLink">
+        <picture class="article__img">
+          <source srcset="<%= require('./images/articles/photo_1.jpg?{ format: \'webp\'}')%>" type="image/webp">
+          <img width="996" height="501" src="<%= require('./images/articles/photo_1.jpg?{ format: \'jpg\'}')%>" alt="ребенок в автокресле" >
+        </picture>
         <a href="https://www.recarokidsrussia.ru/monza-nova-is.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" class="article__imgLink"> Monza Nova IS  </a>
-      </picture>
+      </div>
 
-      <button class="article__button">
-        <a href="https://www.recarokidsrussia.ru/child-seats.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech">Подобрать автокресло</a>
+      <button class="article__button" onclick="document.location.href = 'https://www.recarokidsrussia.ru/child-seats.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
+        Подобрать автокресло
       </button>
 
     </article>
@@ -140,7 +141,7 @@
 
       <picture class="article__img">
         <source srcset="<%= require('./images/articles/photo_2.jpg?{ format: \'webp\'}')%>" type="image/webp">
-        <img width="996" height="501px" src="<%= require('./images/articles/photo_2.jpg?{ format: \'jpg\'}')%>" alt="отец с сыном в машине" type="image/jpg">
+        <img width="996" height="501" src="<%= require('./images/articles/photo_2.jpg?{ format: \'jpg\'}')%>" alt="отец с сыном в машине">
       </picture>
 
     </article>
@@ -211,7 +212,7 @@
           <div class="carSeats__container">
             <p class="carSeats__group">Группа 0/0+</p>
             <p class="carSeats__subtitle">
-              <img src="<%= require('./images/baby_icon.svg')%>" width="23px" height="21px" alt="иконка ребенка">
+              <img src="<%= require('./images/baby_icon.svg')%>" width="23" height="21" alt="иконка ребенка">
               С рождения до 80 см
             </p>
             <p class="carSeats__text">
@@ -223,7 +224,7 @@
           onclick="document.location.href = 'https://www.recarokidsrussia.ru/avan.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
             <picture class="carSeats__img">
               <source srcset="<%= require('./images/carSeats/carSeats_1.jpg?{ sizes:[400], format: \'webp\'}')%>" type="image/webp">
-              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_1.jpg?{ sizes:[400], format: \'jpg\'}')%>" alt="автокресло Avan" type="image/png">
+              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_1.jpg?{ sizes:[400], format: \'jpg\'}')%>" alt="автокресло Avan">
             </picture>
 
             <div class="carSeats__signature">
@@ -237,7 +238,7 @@
           <div class="carSeats__container">
             <p class="carSeats__group">Группа 0+/1</p>
             <p class="carSeats__subtitle">
-              <img src="<%= require('./images/baby_icon.svg')%>" width="23px" height="21px" alt="иконка ребенка">
+              <img src="<%= require('./images/baby_icon.svg')%>" width="23" height="21" alt="иконка ребенка">
               С рождения до 105 см
             </p>
             <p class="carSeats__text">
@@ -249,7 +250,7 @@
           onclick="document.location.href = 'https://www.recarokidsrussia.ru/salia-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
             <picture class="carSeats__img">
               <source srcset="<%= require('./images/carSeats/carSeats_2.jpg?{sizes:[400], format: \'webp\'}')%>" type="image/webp">
-              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_2.jpg?{sizes:[400], format: \'jpg\'}')%>" alt="автокресло Salia Elite" type="image/png">
+              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_2.jpg?{sizes:[400], format: \'jpg\'}')%>" alt="автокресло Salia Elite" >
             </picture>
 
             <div class="carSeats__signature">
@@ -263,7 +264,7 @@
           <div class="carSeats__container">
             <p class="carSeats__group">Группа 1</p>
             <p class="carSeats__subtitle">
-              <img src="<%= require('./images/baby_icon.svg')%>" width="23px" height="21px" alt="иконка ребенка">
+              <img src="<%= require('./images/baby_icon.svg')%>" width="23" height="21" alt="иконка ребенка">
               От 70 до 105 см
             </p>
             <p class="carSeats__text">
@@ -274,7 +275,7 @@
           onclick="document.location.href = 'https://www.recarokidsrussia.ru/kio.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
             <picture class="carSeats__img">
               <source srcset="<%= require('./images/carSeats/carSeats_3.jpg?{ sizes:[400],format: \'webp\'}')%>" type="image/webp">
-              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_3.jpg?{ sizes:[400],format: \'jpg\'}')%>" alt="автокресло Kio" type="image/png">
+              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_3.jpg?{ sizes:[400],format: \'jpg\'}')%>" alt="автокресло Kio" >
             </picture>
 
             <div class="carSeats__signature">
@@ -288,7 +289,7 @@
           <div class="carSeats__container">
             <p class="carSeats__group">Группа 2/3</p>
             <p class="carSeats__subtitle">
-              <img src="<%= require('./images/baby_icon.svg')%>" width="23px" height="21px" alt="иконка ребенка">
+              <img src="<%= require('./images/baby_icon.svg')%>" width="23" height="21" alt="иконка ребенка">
               От 105 до 150 см
             </p>
             <p class="carSeats__text">
@@ -299,7 +300,7 @@
           onclick="document.location.href = 'https://www.recarokidsrussia.ru/mako-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
             <picture class="carSeats__img">
               <source srcset="<%= require('./images/carSeats/carSeats_4.jpg?{ sizes:[400], format: \'webp\'}')%>" type="image/webp">
-              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_4.jpg?{ sizes:[400], format: \'jpg\'}')%>" alt="автокресло Mako Elite" type="image/png">
+              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_4.jpg?{ sizes:[400], format: \'jpg\'}')%>" alt="автокресло Mako Elite">
             </picture>
 
             <div class="carSeats__signature">
@@ -313,7 +314,7 @@
           <div class="carSeats__container">
             <p class="carSeats__group">Группа 1/2/3</p>
             <p class="carSeats__subtitle">
-              <img src="<%= require('./images/baby_icon.svg')%>" width="23px" height="21px" alt="иконка ребенка">
+              <img src="<%= require('./images/baby_icon.svg')%>" width="23" height="21" alt="иконка ребенка">
               От 70 до 150 см
             </p>
             <p class="carSeats__text">
@@ -324,7 +325,7 @@
           onclick="document.location.href = 'https://www.recarokidsrussia.ru/monza-nova-is.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
             <picture class="carSeats__img">
               <source srcset="<%= require('./images/carSeats/carSeats_5.jpg?{sizes:[400], format: \'webp\'}')%>" type="image/webp">
-              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_5.jpg?{sizes:[400], format: \'jpg\'}')%>" alt="автокресло Monza Nova IS" type="image/png">
+              <img width="400" height="316" src="<%= require('./images/carSeats/carSeats_5.jpg?{sizes:[400], format: \'jpg\'}')%>" alt="автокресло Monza Nova IS" >
             </picture>
 
             <div class="carSeats__signature">
@@ -334,9 +335,10 @@
           </div>
         </div>
 
-        <button class="article__button article__button_carSeats">
-          <a href="https://www.recarokidsrussia.ru/child-seats.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech">Подобрать автокресло</a>
+        <button class="article__button article__button_carSeats" onclick="document.location.href = 'https://www.recarokidsrussia.ru/child-seats.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
+          Подобрать автокресло
         </button>
+
 
       </div>
 
@@ -404,7 +406,7 @@
 
       <picture class="article__img ">
         <source srcset="<%= require('./images/articles/photo_4.jpg?{ format: \'webp\'}')%>" type="image/webp">
-        <img width="996" height="501px" src="<%= require('./images/articles/photo_4.jpg?{ format: \'jpg\'}')%>" alt="карта" type="image/jpg">
+        <img width="996" height="501" src="<%= require('./images/articles/photo_4.jpg?{ format: \'jpg\'}')%>" alt="карта" >
       </picture>
 
 
@@ -424,22 +426,24 @@
       </div>
       <p class="article__text">У каждого родителя есть свой список необходимых вещей для путешествий, который формируется из потребностей семьи и ребенка. Мы подготовили список универсальных вещей, которые точно пригодятся родителям в долгой дороге. </p>
       <h3 class="article__title_mini">
-        <img src="<%= require('./images/apple_icon.svg')%>" alt="перекус" type="image/svg">
+        <img src="<%= require('./images/apple_icon.svg')%>" alt="перекус" >
         Перекусы
       </h3>
       <p class="article__text">Для полноценных приемов пищи стоит заранее выбрать кафе по дороге, но в машине всегда должны лежать снеки для вас и ребенка. В первую очередь это должны быть продукты, которые не испортятся за несколько дней: например, яблоки, морковь, бананы, печенья, орехи, фруктовые и овощные чипсы, пюре и смузи в герметичных упаковках. Соберите несколько вариантов снеков в одном ланчбоксе, чтобы у ребенка была возможность выбора.</p>
       <p class="article__text">Не забывайте и о напитках – в автомобилях всегда сухой воздух, из-за которого пить хочется еще больше. В машине обязательно должны быть бутылки с простой питьевой водой, при желании с собой можно взять соки или морсы с трубочкой. Чтобы напитки не нагрелись в машине, можно положить их в небольшую сумку-холодильник.</p>
 
-      <picture class="article__img">
-        <source srcset="<%= require('./images/articles/photo_5.jpg?{ format: \'webp\'}')%>" type="image/webp">
-        <img width="996" height="501px" src="<%= require('./images/articles/photo_5.jpg?{ format: \'jpg\'}')%>" alt="карта" type="image/jpg">
+      <div class="article__imgAndLink">
+        <picture class="article__img">
+          <source srcset="<%= require('./images/articles/photo_5.jpg?{ format: \'webp\'}')%>" type="image/webp">
+          <img width="996" height="501" src="<%= require('./images/articles/photo_5.jpg?{ format: \'jpg\'}')%>" alt="карта" >
+        </picture>
         <a href="https://www.recarokidsrussia.ru/kio.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" class="article__imgLink">Kio</a>
-      </picture>
+      </div>
 
 
 
       <h3 class="article__title_mini">
-        <img src="<%= require('./images/firstAidKit_icon.svg')%>" alt="автомобильная аптечка" type="image/svg">
+        <img src="<%= require('./images/firstAidKit_icon.svg')%>" alt="автомобильная аптечка" >
         Аптечка
       </h3>
 
@@ -450,43 +454,43 @@
 
         <ul class="article__list">
           <li>
-            <img  width="20" height="18"src="<%= require('./images/check.svg')%>" alt="галочка" type="image/svg">
+            <img  width="20" height="18"src="<%= require('./images/check.svg')%>" alt="галочка" >
             Жаропонижающие
           </li>
           <li>
-            <img  width="20" height="18"src="<%= require('./images/check.svg')%>" alt="галочка" type="image/svg">
+            <img  width="20" height="18"src="<%= require('./images/check.svg')%>" alt="галочка" >
             Термометр
           </li>
           <li>
-            <img  width="20" height="18"src="<%= require('./images/check.svg')%>" alt="галочка" type="image/svg">
+            <img  width="20" height="18"src="<%= require('./images/check.svg')%>" alt="галочка" >
             Средство от аллергии
           </li>
           <li>
-            <img  width="20" height="18"src="<%= require('./images/check.svg')%>" alt="галочка" type="image/svg">
+            <img  width="20" height="18"src="<%= require('./images/check.svg')%>" alt="галочка" >
             Гель от укусов насекомых
           </li>
           <li>
-            <img width=""  width="20" height="18"src="<%= require('./images/check.svg')%>" alt="галочка" type="image/svg">
+            <img width="20" height="18"src="<%= require('./images/check.svg')%>" alt="галочка" >
             Пластыри
           </li>
           <li>
-            <img width="20" height="18" src="<%= require('./images/check.svg')%>" alt="галочка" type="image/svg">
+            <img width="20" height="18" src="<%= require('./images/check.svg')%>" alt="галочка" >
             Перекись водорода
           </li>
           <li>
-            <img width="20" height="18" src="<%= require('./images/check.svg')%>" alt="галочка" type="image/svg">
+            <img width="20" height="18" src="<%= require('./images/check.svg')%>" alt="галочка" >
             Средство от диареи
           </li>
           <li>
-            <img width="20" height="18" src="<%= require('./images/check.svg')%>" alt="галочка" type="image/svg">
+            <img width="20" height="18" src="<%= require('./images/check.svg')%>" alt="галочка" >
             Капли от насморка
           </li>
           <li>
-            <img width="20" height="18" src="<%= require('./images/check.svg')%>" alt="галочка" type="image/svg">
+            <img width="20" height="18" src="<%= require('./images/check.svg')%>" alt="галочка" >
             Средство от ожогов
           </li>
           <li>
-            <img width="20" height="18" src="<%= require('./images/check.svg')%>" alt="галочка" type="image/svg">
+            <img width="20" height="18" src="<%= require('./images/check.svg')%>" alt="галочка" >
             Препарат от укачивания
           </li>
 
@@ -495,14 +499,14 @@
 
         <picture class="article__img_list">
           <source srcset="<%= require('./images/firstAidKit_picture.png?{ format: \'webp\'}')%>" type="image/webp">
-          <img width="428" height="490" src="<%= require('./images/firstAidKit_picture.png?{ format: \'png\'}')%>" alt="аптечка" type="image/png">
+          <img width="428" height="490" src="<%= require('./images/firstAidKit_picture.png?{ format: \'png\'}')%>" alt="аптечка" >
 
         </picture>
 
       </div>
 
       <h3 class="article__title_mini">
-        <img src="<%= require('./images/bug_icon.svg')%>" alt="иконка сумки" type="image/svg">
+        <img src="<%= require('./images/bug_icon.svg')%>" alt="иконка сумки" >
         Сумка с самым необходимым
       </h3>
       <p class="article__text">Соберите рюкзак с вещами, которые могут пригодиться в дороге, и положите его в салоне. Так вы всегда сможете дотянуться до нужных вещей, а при необходимости возьмете рюкзак с собой в отель, где будете ночевать.
@@ -513,7 +517,7 @@
       </p>
 
       <h3 class="article__title_mini">
-        <img src="<%= require('./images/babyCarriage_icon.svg')%>" alt="иконка Коляски" type="image/svg">
+        <img src="<%= require('./images/babyCarriage_icon.svg')%>" alt="иконка Коляски" >
         Коляска
       </h3>
       <p class="article__text">Родителям часто кажется, что при наличии автомобиля потребности в коляске в путешествии нет, ведь короткие маршруты можно пройти пешком, а более длинные проехать на машине. И зря. Во время остановок и в первые дни после долгой дороги уставшим будет не только ребенок, но и вы, поэтому есть вероятность, что вам не захочется носить малыша на руках. В этом случае и пригодится коляска.
@@ -523,14 +527,17 @@
       и в сложенном виде занимает очень мало места в багажнике.
       </p>
 
-      <picture class="article__img">
-        <source srcset="<%= require('./images/articles/photo_3.jpg?{ format: \'webp\'}')%>" type="image/webp">
-        <img width="996" height="501px" src="<%= require('./images/articles/photo_3.jpg?{ format: \'jpg\'}')%>" alt="карта" type="image/jpg">
+      <div class="article__imgAndLink">
+        <picture class="article__img">
+          <source srcset="<%= require('./images/articles/photo_3.jpg?{ format: \'webp\'}')%>" type="image/webp">
+          <img width="996" height="501" src="<%= require('./images/articles/photo_3.jpg?{ format: \'jpg\'}')%>" alt="карта" >
+        </picture>
         <a href="https://www.recarokidsrussia.ru/salia-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" class="article__imgLink article__imgLink_nodecoration">
           <span>Salia Elite</span>
           , совмещенное с коляской-трансформером Sadena
         </a>
-      </picture>
+      </div>
+
 
 
     </article>
@@ -548,21 +555,23 @@
       <a href="https://www.recarokidsrussia.ru/mako-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" class="article__link">Mako Elite</a>
       от RECARO встроена звуковая система, к которой можно подключить телефон или планшет. Так ребенок может слушать сказки или любимые песни, пока родители слушают радио или подкасты.
       </p>
+      <div class="article__imgAndLink">
+        <picture class="article__img">
+          <source srcset="<%= require('./images/articles/photo_6.jpg?{ format: \'webp\'}')%>" type="image/webp">
+          <img width="996" height="501" src="<%= require('./images/articles/photo_6.jpg?{ format: \'jpg\'}')%>" alt="ребенок в автокресле" >
+        </picture>
 
-      <picture class="article__img">
-        <source srcset="<%= require('./images/articles/photo_6.jpg?{ format: \'webp\'}')%>" type="image/webp">
-        <img width="996" height="501px" src="<%= require('./images/articles/photo_6.jpg?{ format: \'jpg\'}')%>" alt="ребенок в автокресле" type="image/jpg">
         <a href="https://www.recarokidsrussia.ru/mako-elite.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech" class="article__imgLink article__imgLink_nodecoration">
           <span>Mako Elite</span>
           с встроенной звуковой системой
         </a>
-      </picture>
+      </div>
 
       <p class="article__text">Перед путешествием можно заранее продумать игры для дороги. Например, в пути вы можете разучивать с ребенком песни про путешествия, играть в ассоциации или провести викторину. Мощное оружие против детской скуки – новая игрушка. Перед поездкой загляните в магазин и купите нескольких небольших игрушек: машинку, куклу, книжку с картинками или яйцо с сюрпризом. Спрячьте их в бардачке, а в моменты капризов выдавайте ребенку – это займет его как минимум на полчаса. Совет: не берите с собой музыкальные игрушки. Скорее всего, через пару часов в дороге у вас появится непреодолимое желание вытащить из них батарейки, чтобы больше никогда не слышать этот звук.
       </p>
 
-      <button class="article__button">
-        <a href="https://www.recarokidsrussia.ru/child-seats.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech">Подобрать автокресло</a>
+      <button class="article__button" onclick="document.location.href = 'https://www.recarokidsrussia.ru/child-seats.html?utm_source=hype&utm_medium=article&utm_campaign=hypetech';">
+        Подобрать автокресло
       </button>
 
     </article>
@@ -570,7 +579,7 @@
 
 
     <!-- КУДА ПОЕХАТЬ START -->
-    <section class="trips" id="whereToGo">
+    <div class="trips" id="whereToGo">
       <div class="trips__container">
         <article class="article article_dark ">
           <div class="article__titleContainer">
@@ -581,16 +590,16 @@
             Выбор места для отдыха зависит от образа жизни родителей и возраста ребенка. Родителям с малышами часто хочется расслабиться на пляже, а вот с детьми постарше уже можно присматриваться к активному отдыху. Мы подобрали несколько интересных и популярных туристических мест в России, которые отлично подойдут для поездки на автомобиле.</p>
 
             <div class="trips__trip">
-              <img class="trips__back trips__back_1" width="774" height="1146" src="<%= require('./images/wave.svg')%>" alt="волна" type="image/svg">
+              <img class="trips__back trips__back_1" width="774" height="1146" src="<%= require('./images/wave.svg')%>" alt="волна" >
 
               <picture class="trips__img">
                 <source srcset="<%= require('./images/trip/trip_1.png?{ format: \'webp\'}')%>" type="image/webp">
-                <img  width="528" height="544" src="<%= require('./images/trip/trip_1.png?{ format: \'png\'}')%>" alt="Крым" type="image/png">
+                <img  width="528" height="544" src="<%= require('./images/trip/trip_1.png?{ format: \'png\'}')%>" alt="Крым" >
               </picture>
 
               <div class="">
                 <h3 class="trips__name">
-                  <img src="<%= require('./images/place.svg')%>" width="22px" height="30px" alt="иконка геолокация" type="image/svg">
+                  <img src="<%= require('./images/place.svg')%>" width="22" height="30" alt="иконка геолокация" >
                   Крым
                 </h3>
                 <p class="trips__text">
@@ -610,11 +619,11 @@
             </div>
 
             <div class="trips__trip trips__trip_reverse">
-              <img width="751px" height="792" class="trips__back trips__back_2" src="<%= require('./images/wave_2.svg')%>" alt="волна" type="image/svg">
+              <img width="751" height="792" class="trips__back trips__back_2" src="<%= require('./images/wave_2.svg')%>" alt="волна" >
 
               <div class="">
                 <h3 class="trips__name">
-                  <img src="<%= require('./images/place.svg')%>" width="22px" height="30px" alt="иконка геолокация" type="image/svg">
+                  <img src="<%= require('./images/place.svg')%>" width="22" height="30" alt="иконка геолокация" >
                   Кавказские горы
                 </h3>
                 <p class="trips__text">
@@ -631,22 +640,22 @@
 
               <picture class="trips__img">
                 <source srcset="<%= require('./images/trip/trip_2.png?{ format: \'webp\'}')%>" type="image/webp">
-                <img width="528" height="544" src="<%= require('./images/trip/trip_2.png?{ format: \'png\'}')%>" alt="Кавказские горы" type="image/png">
+                <img width="528" height="544" src="<%= require('./images/trip/trip_2.png?{ format: \'png\'}')%>" alt="Кавказские горы" >
               </picture>
 
             </div>
 
             <div class="trips__trip">
-              <img width="710" height="1824" class="trips__back trips__back_3" src="<%= require('./images/wave_3.svg')%>" alt="волна" type="image/svg">
+              <img width="710" height="1824" class="trips__back trips__back_3" src="<%= require('./images/wave_3.svg')%>" alt="волна" >
 
               <picture class="trips__img">
                 <source srcset="<%= require('./images/trip/trip_3.png?{ format: \'webp\'}')%>" type="image/webp">
-                <img width="528" height="544" src="<%= require('./images/trip/trip_3.png?{ format: \'png\'}')%>" alt="Байкал" type="image/png">
+                <img width="528" height="544" src="<%= require('./images/trip/trip_3.png?{ format: \'png\'}')%>" alt="Байкал" >
               </picture>
 
               <div class="">
                 <h3 class="trips__name">
-                  <img src="<%= require('./images/place.svg')%>" width="22px" height="30px" alt="иконка геолокация" type="image/svg">
+                  <img src="<%= require('./images/place.svg')%>" width="22" height="30" alt="иконка геолокация" >
                   Байкал
                 </h3>
                 <p class="trips__text">
@@ -658,11 +667,11 @@
             </div>
 
             <div class="trips__trip trips__trip_reverse">
-              <img width="878" height="1302"  class="trips__back trips__back_4" src="<%= require('./images/wave_4.svg')%>" alt="волна" type="image/svg">
+              <img width="878" height="1302"  class="trips__back trips__back_4" src="<%= require('./images/wave_4.svg')%>" alt="волна" >
 
               <div class="">
                 <h3 class="trips__name">
-                  <img src="<%= require('./images/place.svg')%>" width="22px" height="30px" alt="иконка геолокация" type="image/svg">
+                  <img src="<%= require('./images/place.svg')%>" width="22" height="30" alt="иконка геолокация" >
                   Карелия
                 </h3>
                 <p class="trips__text">
@@ -678,7 +687,7 @@
 
               <picture class="trips__img">
                 <source srcset="<%= require('./images/trip/trip_4.png?{ format: \'webp\'}')%>" type="image/webp">
-                <img width="528" height="544" src="<%= require('./images/trip/trip_4.png?{ format: \'png\'}')%>" alt="Карелия" type="image/png">
+                <img width="528" height="544" src="<%= require('./images/trip/trip_4.png?{ format: \'png\'}')%>" alt="Карелия" >
               </picture>
 
             </div>
@@ -687,7 +696,7 @@
 
 
       </div>
-    </section>
+    </div>
     <!-- КУДА ПОЕХАТЬ END -->
 
     <footer class="footer">
